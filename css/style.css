@@ -12,8 +12,8 @@ body {
 
 
 .wrapper {
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 
@@ -36,15 +36,20 @@ header {
     height: 200px;
     background-color: #E9E9EA;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     border-bottom: 3px solid black;
+
+}
+
+nav {
+    margin-right: 150px;
 }
 
 header img {
-    width: 150px;
-    margin-top: 15px;
+    width: 250px;
+    margin-left: 170px;
+    margin-top: 20px;
 }
 
 nav li {
@@ -117,7 +122,8 @@ section img {
     border: 1.5px solid black;
     border-radius: 15px;
     padding: 10px;
-    width: 100px;
+    width: 90px;
+    text-align: center;
 
 }
 
@@ -127,7 +133,7 @@ section img {
     text-align: center;
     margin-top: -200px;
     margin-bottom: 150px;
-    margin-right: 250px;
+    margin-right: 350px;
 }
 
 #kader {
@@ -140,6 +146,12 @@ section img {
     margin-right: 0;
     height: 350px;
 
+}
+
+#kader p {
+    margin-top: 50px;
+    margin-left: 15px;
+    line-height: 1.5;
 }
 
 
@@ -196,6 +208,7 @@ section img {
 
 .wacht p {
     margin-bottom: 150px;
+    line-height: 1.5;
 }
 
 .wacht a {
@@ -209,6 +222,7 @@ section img {
 
 
 }
+
 
 /* footer */
 
@@ -262,9 +276,6 @@ section img {
     
 } */
 
-h1 {
-    margin: 8%;
-}
 
 
 
@@ -299,6 +310,7 @@ h1 {
 }
 
 .artist a {
+    padding: 10px;
     width: 125px;
     display: flex;
     justify-content: space-around;
@@ -315,6 +327,7 @@ h1 {
 }
 
 .artist2 a {
+    padding: 10px;
     width: 125px;
     display: flex;
     justify-content: space-around;
@@ -329,9 +342,10 @@ h1 {
     transition: background-color 1s, transfrorm 1s;
     transition-timing-function: ease-out;
 
+
 }
 
-.artist a:hover {
+.artist-main a:hover {
     font-weight: bold;
     background-color: gray;
     transform: translateY(10px);
