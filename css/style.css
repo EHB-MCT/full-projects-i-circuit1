@@ -133,7 +133,7 @@ section img {
     text-align: center;
     margin-top: -200px;
     margin-bottom: 150px;
-    margin-right: 350px;
+    margin-right: 300px;
 }
 
 #kader {
@@ -271,13 +271,10 @@ section img {
     padding-bottom: 500px;
 }
 
-/* .artist {
-    width: 1200px;
-    
-} */
 
-
-
+.artist-main {
+    margin-top: 70px;
+}
 
 .artist img {
     display: flex;
@@ -290,6 +287,7 @@ section img {
     justify-content: space-around;
     align-items: center;
     margin-top: 100px;
+
 }
 
 .artist2 {
