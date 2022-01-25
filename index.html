@@ -1,125 +1,48 @@
 <!DOCTYPE html>
-
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Circuit</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://i.icomoon.io/public/temp/9db6dc7958/UntitledProject/style.css">
-    <link rel="stylesheet" href="https://i.icomoon.io/public/temp/0572494301/UntitledProject/style.css">
-    <link href="//db.onlinewebfonts.com/c/066ce24dae3730ed6c648b09efaea93a?family=Acumin+Variable+Concept"
-        rel="stylesheet" type="text/css" />
-
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="//db.onlinewebfonts.com/c/3c6b0199ae7b57966132e83c939d77e2?family=Futura+PT+Medium" rel="stylesheet"
+        type="text/css" />
+    <title>Document</title>
 </head>
 
 <body>
-
-    <header>
-
-        <img src="images/LOGOOO" class="img-logo">
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="artist.html">Artist page</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-
-    </header>
-    </div>
-    </div>
-
     <div class="wrapper">
-        <section>
-            <div class="muziek">
-                <img src="images/muziek">
-                <img src="images/muziek">
-            </div>
-            <div class="first">
-                <div id="curtain">
-                    <img src="images/curtain.png">
-                    <h1>Wat is jouw verborgen <br>talent?</h1>
-                </div>
-                <div id="kader">
-                    <p>CIRCUIT biedt jongeren kansen om hun eigen artistieke traject verder te verdiepen. Een
-                        kunstenaar/coach ondersteunt, inspireert, en daagt hen uit om tot een publiek eindresultaat
-                        te
-                        komen. Een voorstelling, festival, expo, of iets compleet out-of-the-box. Elk traject
-                        vertrekt
-                        vanuit hun eigen idee en drive. Ze werken aan hun individuele project, afgewisseld met
-                        groepsmomenten waarbij ze uitwisselen met andere jongeren. </p>
-                    <a href="#">LEES MEER</a>
-                </div>
+        <header>
+            <div class="logo">
+                <img src="images/logo png.png">
             </div>
 
-
-            <div class="second">
-                <div>
-                    <a href="#">SCHRIJF JE IN</a>
-                </div>
-                <div>
-                    <img src="images/ppaer" id="paper">
-                </div>
-                <div>
-                    <img src="images/vlek" class="vlek">
-                </div>
-
-            </div>
-        </section>
-
-        <section>
-            <div class="inschrijven">
-                <div class="wacht">
-                    <h1>WACHT NIET!</h1>
-                    <p>Ben je zelf performer, choreograaf, theatermaker, muzikant, urban artist, of tout court een
-                        artiest
-                        tussen 16 en 26 jaar? Werk je individueel, als collectief, in duo of in groep? Dan kom je in
-                        aanmerking voor de volgende oproep voor CIRCUIT.
-                    </p>
-
-                    <a href="#">SCHRIJF JE IN!</a>
-                </div>
-                <div class="video">
-                    <iframe class="video-circuit" width="800" height="405"
-                        src="https://www.youtube.com/embed/jTcouNZMhqM" title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
+            <div id="menu-bar">
+                <div id="menu" onclick="onClickMenu()">
+                    <div id="bar1" class="bar"></div>
+                    <div id="bar2" class="bar"></div>
+                    <div id="bar3" class="bar"></div>
                 </div>
             </div>
-        </section>
-
+            <nav class="nav" id="nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Over ons</a></li>
+                    <li><a href="#">Traject</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
     </div>
 
-
-    <footer>
-        <div class="contact">
-            <div class="contact-us">
-                <h4>CONTACT US</h4>
-            </div>
-
-            <div class="icons">
-
-                <a href="#">
-                    <span class="icon-location"></span>
-                </a>
-                <a href="#">
-                    <span class="icon-phone"></span>
-                </a>
-
-                <a href="#">
-                    <span class="icon-instagram"></span>
-                </a>
-                <a href="#">
-                    <span class="icon-mail"></span>
-
-                </a>
-
-            </div>
-        </div>
-    </footer>
-
+    <script>
+        function onClickMenu() {
+            document.getElementById("menu").classList.toggle("change");
+            document.getElementById("nav").classList.toggle("change")
+        }
+    </script>
 </body>
 
 </html>
