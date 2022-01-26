@@ -8,6 +8,7 @@
     <link href="css/reset.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/srb0kqy.css">
+
     <title>Document</title>
 </head>
 
@@ -19,25 +20,109 @@
                 <div class="logo" id="home">
                     <img src="images/logoooooo.png" id="logo">
                 </div>
-                <div id="menu-bar">
-                    <div id="menu" onclick="onClickMenu()">
-                        <div id="bar1" class="bar"></div>
-                        <div id="bar2" class="bar"></div>
-                        <div id="bar3" class="bar"></div>
+                <div class="bignav">
+                    <div id="menu-bar">
+                        <div id="menu" onclick="onClickMenu()">
+                            <div id="bar1" class="bar"></div>
+                            <div id="bar2" class="bar"></div>
+                            <div id="bar3" class="bar"></div>
+                        </div>
+                    </div>
+                    <nav class="nav" id="nav">
+                        <ul>
+                            <li><a href="over-ons.html"><strong>Over ons</strong></a></li>
+                            <li><a href="#about"><strong>Traject</strong></a></li>
+                            <li><a href="#"><strong>Artists</strong></a></li>
+                            <li><a href="#"><strong>Contact</strong></a></li>
+                        </ul>
+                    </nav>
+
+                </div>
+
+            </header>
+
+            <section id="carousel">
+                <div class="slider">
+                    <div class="slide-track">
+                        <div class="slide">
+                            <img src="images/mobile-begin-1.png">
+                        </div>
+                        <div class="slide">
+                            <img src="images/mobile-begin-2.png">
+                        </div>
+                        <div class="slide">
+                            <img src="images/mobile-begin-3.png">
+                        </div>
+
+                        <div class="slide">
+                            <img src="images/mobile-begin-1.png">
+                        </div>
+                        <div class="slide">
+                            <img src="images/mobile-begin-2.png">
+                        </div>
+                        <div class="slide">
+                            <img src="images/mobile-begin-3.png">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="sliderTwo">
+                    <div class="slide-trackTwo">
+                        <div class="slideTwo">
+                            <img src="images/mobile-begin-4.png">
+                        </div>
+                        <div class="slideTwo">
+                            <img src="images/mobile-begin-5.png">
+                        </div>
+                        <div class="slideTwo">
+                            <img src="images/mobile-begin-6.png">
+                        </div>
+
+                        <div class="slideTwo">
+                            <img src="images/mobile-begin-4.png">
+                        </div>
+                        <div class="slideTwo">
+                            <img src="images/mobile-begin-5.png">
+                        </div>
+                        <div class="slideTwo">
+                            <img src="images/mobile-begin-6.png">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="slider">
+                    <div class="slide-track">
+                        <div class="slide">
+                            <img src="images/mobile-begin-1.png">
+                        </div>
+                        <div class="slide">
+                            <img src="images/mobile-begin-2.png">
+                        </div>
+                        <div class="slide">
+                            <img src="images/mobile-begin-3.png">
+                        </div>
+
+                        <div class="slide">
+                            <img src="images/mobile-begin-1.png">
+                        </div>
+                        <div class="slide">
+                            <img src="images/mobile-begin-2.png">
+                        </div>
+                        <div class="slide">
+                            <img src="images/mobile-begin-3.png">
+                        </div>
                     </div>
                 </div>
-                <nav class="nav" id="nav">
-                    <ul>
-                        <li><a href="#home"><strong>Over ons</strong></a></li>
-                        <li><a href="#about"><strong>Traject</strong></a></li>
-                        <li><a href="#"><strong>Artists</strong></a></li>
-                        <li><a href="#"><strong>Contact</strong></a></li>
-                    </ul>
-                </nav>
-            </header>
+                <div id="anim"></div>
+            </section>
         </div>
     </div>
 
+
+    <script src="js/index.js"></script>
+    <script src="js/lottie.js"></script>
     <script>
         function onClickMenu() {
             document.getElementById("menu").classList.toggle("change");
