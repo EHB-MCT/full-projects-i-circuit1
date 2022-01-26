@@ -7,42 +7,45 @@ html {
 .outer-wrapper {
     width: 100%;
     background-color: black;
+    color: white;
+
 }
+
 
 .wrapper {
     background-color: #000000;
     margin-left: 5%;
     margin-right: 5%;
     font-family: futura-pt, sans-serif;
-
     font-weight: 400;
-
     font-style: normal;
 }
 
 
-
+h1 {
+    font-weight: heavy;
+}
 
 .header {
 
     display: flex;
     justify-content: space-between;
     padding-top: 20px;
+
 }
 
 #menu {
     position: absolute;
-    width: 35px;
-    height: 30px;
+    width: 25px;
     right: 10px;
-    top: 5%;
+    padding-top: 20px;
     cursor: pointer;
 }
 
+
 .bar {
     display: block;
-    width: 100%;
-    height: 5px;
+    height: 4px;
     background-color: white;
     border-radius: 5px;
     transition: 0.3s ease;
@@ -58,35 +61,57 @@ html {
 }
 
 .nav {
-    transform: translateX(150px);
+    display: none;
+    text-align: center;
 }
 
-nav ul li {
-    display: block;
-    margin: 20px;
+nav li {
+    border: 2px solid black;
 }
 
-nav a {
+
+nav li a {
     text-decoration: none;
+    display: block;
     color: white;
     padding: 5px;
     padding-right: 20px;
     padding-left: 20px;
 
+
 }
 
-nav a:hover {
-    border: 1px solid rgb(235, 0, 139);
+/* nav hover */
+nav ul li:first-child:hover {
+    border: 2px solid rgb(235, 0, 139);
     border-radius: 100%;
-
-
 }
+
+
+nav ul li:nth-child(2):hover {
+    border: 2px solid rgb(0, 174, 239);
+    border-radius: 100%;
+}
+
+nav ul li:nth-child(3):hover {
+    border: 2px solid rgb(255, 242, 0);
+    border-radius: 100%;
+}
+
+nav ul li:last-child:hover {
+    border: 2px solid rgb(235, 0, 139);
+    border-radius: 100%;
+}
+
+
+
+
 
 
 .change #bar1 {
-    transform: translateY(4px) rotateZ(45deg);
+    transform: translateY(3.5px) rotateZ(45deg);
     transition-duration: 1s;
-    background-color: rgb(235, 0, 139);
+
 }
 
 
@@ -96,13 +121,18 @@ nav a:hover {
 }
 
 .change #bar3 {
-    transform: translateY(-6px) rotateZ(-45deg);
+    transform: translateY(-3.5px) rotateZ(-45deg);
     transition-duration: 1s;
-    background-color: rgb(0, 174, 239);
+
 }
 
 .nav.change {
-    transform: translateX(-100px);
+    display: block;
+    transition-duration: 1s;
+    position: relative;
+    text-align: center;
+
+
 }
 
 nav ul li {
@@ -113,12 +143,143 @@ nav ul li {
 
 nav a {
     text-decoration: none;
-    color: rgb(170, 17, 17);
+    color: white;
 }
 
 header img {
     max-width: 300px;
 }
+
+
+
+
+/* carousel */
+
+.slider {
+    display: grid;
+    place-items: center;
+    position: relative;
+    width: 100%;
+    height: 250px;
+    width: 100%;
+
+    overflow: hidden;
+
+
+}
+
+.slide-track {
+    display: flex;
+    width: calc(250px*6);
+    animation: scroll 30s linear infinite;
+    animation-iteration-count: infinite;
+}
+
+.slide {
+    height: 250px;
+    display: flex;
+    align-items: center;
+}
+
+.slide img {
+    width: 100%;
+    height: 250px;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-250px*6));
+    }
+}
+
+.sliderTwo {
+
+    display: grid;
+    place-items: center;
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+    width: 100%;
+
+}
+
+.slide-trackTwo {
+    display: flex;
+    width: calc(250px*3);
+    animation: scrollTwee 30s linear infinite;
+
+}
+
+.slideTwo {
+    height: 200px;
+    display: flex;
+    align-items: center;
+
+
+}
+
+.slideTwo img {
+    width: 250px;
+}
+
+@keyframes scrollTwee {
+    0% {
+        margin-left: -500px;
+    }
+
+    100% {
+        transform: translateX(calc(250px*3));
+    }
+}
+
+/* logo */
+.st0 {
+    enable-background: new;
+}
+
+.st1 {
+    clip-path: url(#SVGID_00000133496436900588214070000002999823026709723564_);
+}
+
+.st2 {
+    fill: #FFFFFF;
+}
+
+.st3 {
+    clip-path: url(#SVGID_00000026155763917788806200000002072605841384187800_);
+}
+
+
+svg {
+
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    margin-top: -100px;
+
+}
+
+/* logo */
+.st0 {
+    enable-background: new;
+}
+
+.st1 {
+    clip-path: url(#SVGID_00000133496436900588214070000002999823026709723564_);
+}
+
+.st2 {
+    fill: #FFFFFF;
+}
+
+.st3 {
+    clip-path: url(#SVGID_00000026155763917788806200000002072605841384187800_);
+}
+
 
 @media(min-width:1024px) {
     #menu-bar {
@@ -126,13 +287,26 @@ header img {
     }
 
     .nav {
+        display: block;
         top: 10px;
-        margin-right: -150px;
+
     }
 
-    .nav li {
-
+    .nav ul li {
         display: inline-block;
+    }
+
+    .outer-wrapper {
+        background-image: url("images/desk-begin.jpg");
+
+    }
+
+    .slider {
+        display: none;
+    }
+
+    .sliderTwo {
+        display: none;
     }
 
 
