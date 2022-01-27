@@ -2,52 +2,41 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>3d-carousal</title>
+    <link rel="stylesheet" type="text/css" href="css/webstyle.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test website</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://i.icomoon.io/public/temp/9db6dc7958/UntitledProject/style.css">
-    <link rel="stylesheet" href="https://i.icomoon.io/public/temp/0572494301/UntitledProject/style.css">
-    <link href="//db.onlinewebfonts.com/c/066ce24dae3730ed6c648b09efaea93a?family=Acumin+Variable+Concept"
-        rel="stylesheet" type="text/css" />
-
-
 </head>
 
 <body>
+    <div class="outer-wrapper">
+        <div class="wrapper">
 
-    <footer>
-        <div class="contact" id="contact">
-            <div class="contact-us">
-                <h4>CONTACT US</h4>
+
+            <div class="container">
+
+                <div class="button" onclick="shiftLeft()"><img src="images/arrow-left.png" alt=""></div>
+                <div class="cards-wrapper">
+                    <ul class="cards__container">
+                        <li class="box"><img src="images/mobile-begin-1.png"></li>
+                        <li class="box"><img src="images/mobile-begin-2.png"></li>
+                        <li class="box"><img src="images/mobile-begin-3.png"></li>
+                        <li class="box"><img src="images/mobile-begin-4.png"></li>
+                        <li class="box box--hide"><img src="images/mobile-begin-5.png"></li>
+                        <li class="box box--hide"><img src="images/mobile-begin-6.png"></li>
+                    </ul>
+                    <div class="card__text-content">
+                        <h3 class="card__title">The Famous Five</h3>
+                        <div class="card__summary">The Famous Five is a series of children's adventure novels written by
+                            English
+                            author Enid Blyton. The first book, Five on a Treasure Island, was published in 1942.</div>
+                    </div>
+                </div>
+                <div class="button" onclick="shiftRight()"><img src="images/arrow-right.png" alt=""></div>
             </div>
 
-            <div class="icons">
-
-                <a href="#">
-                    <span class="icon-location"></span>
-                </a>
-                <a href="#">
-                    <span class="icon-phone"></span>
-                </a>
-
-                <a href="#">
-                    <span class="icon-instagram"></span>
-                </a>
-                <a href="#">
-                    <span class="icon-mail"></span>
-
-                </a>
-
-            </div>
         </div>
-    </footer>
-
-
-
-
+    </div>
+    <script src='js/index.js'></script>
 </body>
 
 </html>
