@@ -27,6 +27,11 @@ html {
 
 h1 {
     font-weight: heavy;
+    font-size: 3em;
+}
+
+h2 {
+    font-weight: medium;
     font-size: 2em;
 }
 
@@ -52,7 +57,6 @@ h1 {
     display: block;
     height: 4px;
     background-color: white;
-    border-radius: 5px;
     transition: 0.3s ease-out;
 
 
@@ -74,9 +78,10 @@ h1 {
 }
 
 nav li {
-
     border: 2px solid transparent;
     transform: translateX(200px);
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 
@@ -84,11 +89,6 @@ nav li a {
     text-decoration: none;
     display: block;
     color: white;
-    padding: 5px;
-    padding-right: 20px;
-    padding-left: 20px;
-
-
 }
 
 /* nav hover */
@@ -127,7 +127,7 @@ nav ul li:last-child:hover {
 
 /* fix guys */
 .change #bar2 {
-    transform: translateX(100px);
+    transform: translateX(200px);
     transition-duration: 0.5s;
 
 }
@@ -198,11 +198,11 @@ header img {
 
 @keyframes scroll {
     0% {
-        transform: translateX(0);
+        transform: translateX(0px);
     }
 
     100% {
-        transform: translateX(calc(-250px*3));
+        transform: translateX(-750px);
     }
 
 }
@@ -244,11 +244,11 @@ header img {
 
 @keyframes scrollTwo {
     0% {
-        transform: translateX(0);
+        transform: translateX(-750px);
     }
 
     100% {
-        transform: translateX(calc(250px*3));
+        transform: translateX(0px);
     }
 
 }
@@ -259,23 +259,20 @@ over ons */
 .over-ons {
     padding-bottom: 100px;
     padding-top: 100px;
-
 }
 
 .over-ons a {
     position: relative;
     text-decoration: none;
-    color: black;
+    color: white;
     top: 50px;
-    background-color: white;
     padding: 15px;
-    border-radius: 20px;
     font-weight: medium;
-    border: 2px solid transparent;
+    border: 2px solid white;
 }
 
 .over-ons a:hover {
-    border: 2px solid magenta;
+    border: 2px solid rgb(235, 0, 139);
 
 }
 
@@ -288,11 +285,8 @@ over ons */
 /* contact */
 
 .container {
-
-    position: absolute;
-    margin: 20px;
+    margin-top: 20px;
     max-width: 450px;
-    padding: 16px;
     background-color: black;
 }
 
@@ -300,12 +294,9 @@ over ons */
 input[type=text] {
 
     width: 90%;
-
     padding: 15px;
     margin: 5px 0 22px 0;
-
     border: none;
-
     background: #f1f1f1;
     border: 3px solid transparent;
 }
@@ -318,40 +309,73 @@ input:hover {
 
 .contact {
     color: white;
-    padding: 16px 20px;
+    padding: 16px 20px 16px 0px;
     border: none;
     cursor: pointer;
     width: 100%;
 }
 
 
-
-.contact:hover {
-    opacity: 1;
-}
-
-
-
 .btn {
-
-    position: relative;
-    background-color: #fff100;
-    border-radius: 5px;
-    left: 150px;
-    width: 30%;
-    font-size: 20px;
-    color: black;
-}
-
-
-.btn:hover {
-
-    background-color: rgb(0, 174, 239);
-    transform: translateX(1px);
-    transform: translateY(1px);
-    transition-duration: 0.5s;
+    text-decoration: none;
+    margin-top: 100px;
     color: white;
+    padding: 15px;
+    font-weight: medium;
+    border: 2px solid white;
 }
+
+.container a:hover {
+
+    border: 2px solid rgb(235, 0, 139);
+}
+
+.verantw a {
+    color: white;
+
+}
+
+.verantw {
+    margin-top: 50px;
+}
+
+.locatie {
+    position: relative;
+    margin-top: 50px;
+}
+
+.adress {
+    display: flex;
+    flex-direction: column;
+}
+
+.adress div {
+    margin-bottom: 50px;
+}
+
+
+
+
+
+@media(min-width: 768px) {
+
+
+    .outer-wrapper {
+        background-color: black;
+
+    }
+
+    .wrapper {
+        background-color: transparent;
+    }
+
+    nav li {
+        border: 2px solid transparent;
+    }
+
+
+}
+
 
 @media(min-width:1024px) {
 
@@ -360,20 +384,18 @@ input:hover {
     }
 
     .nav {
+        position: relative;
         display: block;
-        top: 10px;
+
     }
 
     .nav ul li {
         display: inline-block;
     }
 
-    body {
-        background-color: transparent;
-    }
+    .outer-wrapper .contacteer {
+        background-color: black;
 
-    .outer-wrapper {
-        background-color: transparent;
     }
 
     .wrapper {
@@ -434,6 +456,57 @@ input:hover {
         }
     }
 
+    /* contact */
+
+    .outer-wrapper .contact {
+        background-color: black;
+    }
+
+    #first {
+        display: flex;
+    }
+
+    .contact {
+        position: relative;
+    }
+
+    .container {
+        max-width: 90%;
+    }
 
 
+    #first div {
+        margin-right: 100px;
+        width: 30%;
+    }
+
+    #second {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    input[type=text] {}
+
+
+
+
+
+    /* contact */
+
+    .outer-wrapper .contact {
+        background-color: black;
+    }
+
+    #first {
+        display: flex;
+    }
+
+    .contact {
+        position: relative;
+    }
+
+    .container {
+        max-width: 90%;
+    }
 }
