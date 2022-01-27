@@ -14,6 +14,32 @@
 <body>
     <div class="outer-wrapper-contact">
         <div class="wrapper-contact">
+
+            <header class="header">
+
+                <div class="logo" id="home">
+                    <a href="index.html"> <img src="images/logoooooo.png" id="logo"></a>
+                </div>
+                <div class="bignav">
+                    <div id="menu-bar">
+                        <div id="menu" onclick="onClickMenu()">
+                            <div id="bar1" class="bar"></div>
+                            <div id="bar2" class="bar"></div>
+                            <div id="bar3" class="bar"></div>
+                        </div>
+                    </div>
+                    <nav class="nav" id="nav">
+                        <ul>
+                            <li><a href="#over-ons"><strong>Over ons</strong></a></li>
+                            <li><a href="traject.html"><strong>Traject</strong></a></li>
+                            <li><a href="artist.html"><strong>Artists</strong></a></li>
+                            <li><a href="contact.html"><strong>Contact</strong></a></li>
+                        </ul>
+                    </nav>
+
+                </div>
+
+            </header>
             <div class="line">
                 <h1> Traject</h1>
                 <div class="container left">
@@ -96,6 +122,12 @@
 
 
             </div>
+            <script>
+                function onClickMenu() {
+                    document.getElementById("menu").classList.toggle("change");
+                    document.getElementById("nav").classList.toggle("change")
+                }
+            </script>
         </div>
     </div>
 
