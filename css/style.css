@@ -171,10 +171,8 @@ header img {
     display: grid;
     place-items: center;
     position: relative;
-    width: 100%;
     height: 250px;
     width: 100%;
-
     overflow: hidden;
 
 
@@ -183,19 +181,19 @@ header img {
 .slide-track {
     display: flex;
     width: calc(250px*6);
-    animation: scroll 30s linear infinite;
+    animation: scroll 10s linear infinite;
     animation-iteration-count: infinite;
 }
 
 .slide {
-    height: 250px;
+    width: 250px;
     display: flex;
     align-items: center;
 }
 
 .slide img {
     width: 100%;
-    height: 250px;
+    height: auto;
 }
 
 @keyframes scroll {
@@ -204,31 +202,35 @@ header img {
     }
 
     100% {
-        transform: translateX(calc(-250px*6));
+        transform: translateX(calc(-250px*3));
     }
 
 }
 
 .sliderTwo {
-
     display: grid;
     place-items: center;
     position: relative;
     height: 250px;
-    overflow: hidden;
     width: 100%;
-
+    overflow: hidden;
 }
 
 .slide-trackTwo {
     display: flex;
-    width: calc(250px*3);
-    animation: scrollTwee 30s linear infinite;
+    width: calc(250px*6);
+    animation: scrollTwo 10s linear infinite;
+    animation-iteration-count: infinite;
 
 }
 
 .slideTwo {
-    height: 200px;
+    /*    width: 250px;
+    height: auto;
+    display: flex;
+    align-items: center; */
+
+    width: 250px;
     display: flex;
     align-items: center;
 
@@ -236,14 +238,14 @@ header img {
 }
 
 .slideTwo img {
-    width: 250px;
+    width: 100%;
+    height: auto;
 }
 
-@keyframes scrollTwee {
+@keyframes scrollTwo {
     0% {
-        margin-left: -500px;
+        transform: translateX(0);
     }
-
 
     100% {
         transform: translateX(calc(250px*3));
