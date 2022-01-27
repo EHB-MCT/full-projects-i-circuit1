@@ -7,7 +7,7 @@ html {
 
 
 
-.outer-wrapper {
+.outer-wrapper-home {
     width: 100%;
     background-color: black;
     color: white;
@@ -15,7 +15,7 @@ html {
 }
 
 
-.wrapper {
+.wrapper-home {
     background-color: #000000;
     margin-left: 10%;
     margin-right: 10%;
@@ -24,6 +24,21 @@ html {
     font-style: normal;
 }
 
+.outer-wrapper-contact {
+    width: 100%;
+    background-color: black;
+    color: white;
+    line-height: 1.5;
+}
+
+.wrapper-contact {
+    background-color: #000000;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: futura-pt, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
 
 h1 {
     font-weight: heavy;
@@ -51,6 +66,7 @@ h2 {
     padding-top: 20px;
     cursor: pointer;
 }
+
 
 
 .bar {
@@ -117,6 +133,10 @@ nav ul li:last-child:hover {
 
 
 
+.change #menu {
+    overflow: hidden;
+
+}
 
 .change #bar1 {
     transform: translateY(3.5px) rotateZ(45deg);
@@ -129,6 +149,7 @@ nav ul li:last-child:hover {
 .change #bar2 {
     transform: translateX(200px);
     transition-duration: 0.5s;
+    background-color: pink;
 
 }
 
@@ -253,6 +274,16 @@ header img {
 
 }
 
+
+/* logo draaien */
+
+.logo-draaien img {
+    position: absolute;
+    top: 40%;
+    left: 0px;
+    width: 100%;
+}
+
 /* 
 over ons */
 
@@ -278,15 +309,122 @@ over ons */
 
 /* traject */
 
-.traject {
-    text-align: center;
+
+
+/* The actual timeline (the vertical ruler) */
+.line {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
 }
+
+/* The actual timeline (the vertical ruler) */
+.line::after {
+    content: '';
+    position: absolute;
+    width: 5px;
+    background-color: white;
+    top: 50px;
+    bottom: 0;
+}
+
+/* Container around content */
+.container {
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: -7.5px;
+    margin-left: 4px;
+    background-color: white;
+    top: 50px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+    left: 0;
+}
+
+/* the right box */
+
+
+.line h1 {
+    color: white;
+    text-align: center;
+    font-size: 48px;
+}
+
+.line p {
+
+    font-size: 16px;
+}
+
+.line h2 {
+
+    font-size: 32px;
+    text-shadow: 2px 1.5px white;
+}
+
+
+/* Circle the right side */
+.right::after {
+    left: -7.5px;
+}
+
+/* The actual content */
+.content {
+    padding: 20px 30px;
+    position: relative;
+    border-radius: 6px;
+}
+
+.container p {
+    color: white;
+}
+
+.start {
+    color: rgb(235, 0, 139);
+
+}
+
+.begeleiding {
+    color: rgb(0, 174, 239);
+
+}
+
+.proces {
+    color: yellow;
+
+}
+
+.resultaat {
+    color: rgb(235, 0, 139);
+
+}
+
+
+
+
+
+
+
+
+
 
 /* contact */
 
 .container {
     margin-top: 20px;
-    max-width: 450px;
+    width: 100%;
     background-color: black;
 }
 
@@ -360,19 +498,30 @@ input:hover {
 @media(min-width: 768px) {
 
 
-    .outer-wrapper {
-        background-color: black;
-
-    }
-
-    .wrapper {
+    /*    .outer-wrapper {
         background-color: transparent;
     }
+
+    .outer-wrapper-contact {
+        width: 100%;
+        background-color: black;
+        color: white;
+        line-height: 1.5;
+    } */
 
     nav li {
         border: 2px solid transparent;
     }
 
+    .locatie {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .map {
+        width: 60%;
+    }
 
 }
 
@@ -393,12 +542,11 @@ input:hover {
         display: inline-block;
     }
 
-    .outer-wrapper .contacteer {
-        background-color: black;
-
+    .outer-wrapper-home {
+        background-color: transparent;
     }
 
-    .wrapper {
+    .wrapper-home {
         background-color: transparent;
     }
 
@@ -458,11 +606,8 @@ input:hover {
 
     /* contact */
 
-    .outer-wrapper .contact {
-        background-color: black;
-    }
 
-    #first {
+    #eerste {
         display: flex;
     }
 
@@ -486,7 +631,7 @@ input:hover {
         width: 100%;
     }
 
-    input[type=text] {}
+
 
 
 
@@ -494,9 +639,20 @@ input:hover {
 
     /* contact */
 
-    .outer-wrapper .contact {
+    .outer-wrapper-contact {
         background-color: black;
+        width: 100%;
     }
+
+    .wrapper-contact {
+        background-color: #000000;
+        margin-left: 10%;
+        margin-right: 10%;
+        font-family: futura-pt, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
 
     #first {
         display: flex;
@@ -509,4 +665,97 @@ input:hover {
     .container {
         max-width: 90%;
     }
+
+
+
+
+
+    /* TRAJECT */
+
+    /* The actual timeline (the vertical ruler) */
+    .line {
+        position: relative;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    /* The actual timeline (the vertical ruler) */
+    .line::after {
+        content: '';
+        position: absolute;
+        width: 5px;
+        background-color: white;
+        top: 80px;
+        bottom: -100px;
+        left: 50%;
+        margin-left: -3px;
+    }
+
+    /* Container around content */
+    .container {
+        position: relative;
+        background-color: inherit;
+        width: 50%;
+    }
+
+    /* The circles on the timeline */
+    .container::after {
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        right: -10px;
+        background-color: white;
+        top: 100px;
+        border-radius: 50%;
+        z-index: 1;
+    }
+
+    .container.left::after {
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background-color: white;
+        top: 100px;
+        border-radius: 50%;
+        z-index: 1;
+    }
+
+    /* Place the container to the left */
+    .left {
+        left: 0;
+    }
+
+    /* the right box */
+    .right {
+        left: 50%;
+    }
+
+    h1 {
+        color: white;
+        text-align: center;
+    }
+
+    /* Circle the right side */
+    .right::after {
+        left: -15px;
+    }
+
+    /* The actual content */
+    .content {
+        position: relative;
+        border-radius: 6px;
+    }
+
+    .container p {
+        color: white;
+    }
+
+    .content {
+        position: relative;
+        top: 50px;
+    }
+
+
 }
