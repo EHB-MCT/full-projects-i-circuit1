@@ -314,7 +314,7 @@ over ons */
 .line {
     position: relative;
     width: 100%;
-    margin: 0 auto;
+    right: 0px;
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -324,6 +324,7 @@ over ons */
     width: 5px;
     background-color: white;
     top: 50px;
+    left: 0px;
     bottom: 0;
 }
 
@@ -379,11 +380,13 @@ over ons */
     left: -7.5px;
 }
 
+
 /* The actual content */
 .content {
     padding: 20px 30px;
     position: relative;
     border-radius: 6px;
+
 }
 
 .container p {
@@ -502,7 +505,7 @@ input:hover {
 
 footer {
     width: 100%;
-    height: 200px;
+    height: 100px;
     background: black;
     display: flex;
     justify-content: center;
@@ -656,10 +659,9 @@ footer {
 
 
     .over-ons {
-        position: relative;
-        margin-top: 200px;
+        padding-top: 200px;
+        margin-top: 62%;
         width: 50%;
-        left: 50%;
     }
 
     /* contact */
@@ -718,6 +720,9 @@ footer {
         max-width: 90%;
     }
 
+    .content {
+        left: 120px;
+    }
 
 
 
@@ -740,7 +745,7 @@ footer {
     .container {
         position: relative;
         background-color: inherit;
-        width: 40%;
+        width: 30%;
     }
 
     /* The circles on the timeline */
@@ -749,16 +754,16 @@ footer {
         position: absolute;
         width: 20px;
         height: 20px;
-        right: -10px;
         background-color: white;
         top: 100px;
         border-radius: 50%;
         z-index: 1;
     }
 
+
     /* Place the container to the left */
     .left {
-        left: 0;
+        left: 0px;
     }
 
     /* the right box */
@@ -768,7 +773,22 @@ footer {
 
     h1 {
         color: white;
-        text-align: center;
+    }
+
+
+    .container.left::after {
+
+        position: relative;
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background-color: white;
+        top: 100px;
+        left: 163.5%;
+        border-radius: 50%;
+        z-index: 1;
+
     }
 
     /* Circle the right side */
@@ -795,8 +815,10 @@ footer {
         margin-bottom: 100px;
     }
 
-    .logo-draaien {
-        display: none;
+    .logo-draaien img {
+        position: relative;
+        display: block;
+        left: 30%;
     }
 
     /* artists */
@@ -1104,18 +1126,23 @@ footer {
         }
     }
 
-
+    .noise img {
+        position: absolute;
+        right: -120px;
+        bottom: 20px;
+        width: 500px;
+    }
 
 
     /* footer */
 
     footer {
-        position: relative;
-        bottom: -260px;
+        padding: 20px;
 
     }
 
     .fa {
         width: 150px;
     }
+
 }
