@@ -91,13 +91,13 @@ h2 {
     display: none;
     position: absolute;
     text-align: center;
+
 }
 
 nav li {
     border: 2px solid transparent;
     transform: translateX(200px);
-    padding-left: 10px;
-    padding-right: 10px;
+
 }
 
 
@@ -105,6 +105,8 @@ nav li a {
     text-decoration: none;
     display: block;
     color: white;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 /* nav hover */
@@ -137,21 +139,19 @@ nav ul li:last-child:hover {
 }
 
 .change #bar1 {
-    transform: translateY(3.5px) rotateZ(45deg);
-    transition-duration: 1s;
+    transform: translateY(2px) rotateZ(45deg);
+    transition-duration: 0.2s;
 
 }
 
-
-/* fix guys */
 .change #bar2 {
     display: none;
 
 }
 
 .change #bar3 {
-    transform: translateY(-3.5px) rotateZ(-45deg);
-    transition-duration: 1s;
+    transform: translateY(-2px) rotateZ(-45deg);
+    transition-duration: 0.2s;
 
 }
 
@@ -159,7 +159,7 @@ nav ul li:last-child:hover {
     display: block;
     transform: translateX(-200px);
     position: relative;
-    transition-duration: 1s;
+
     margin-top: 80px;
     right: 20%;
 }
@@ -183,6 +183,8 @@ header img {
 
 
 /* carousel */
+
+
 
 .slider {
     display: grid;
@@ -423,14 +425,14 @@ over ons */
     background-color: black;
 }
 
-
+/* ask team */
 input[type=text] {
 
     width: 90%;
     padding: 15px;
     margin: 5px 0 22px 0;
     border: none;
-    background: #f1f1f1;
+    background: white;
     border: 3px solid transparent;
 }
 
@@ -441,7 +443,7 @@ input:hover {
 }
 
 .contact {
-    color: white;
+
     padding: 16px 20px 16px 0px;
     border: none;
     cursor: pointer;
@@ -464,7 +466,7 @@ input:hover {
 }
 
 
-.container a:hover {
+.container-contact a:hover {
 
     border: 2px solid rgb(235, 0, 139);
 }
@@ -474,8 +476,10 @@ input:hover {
 
 }
 
+
+
 .verantw {
-    margin-top: 50px;
+    margin-top: 100px;
 }
 
 .locatie {
@@ -492,7 +496,43 @@ input:hover {
     margin-bottom: 50px;
 }
 
+/* footer */
 
+footer {
+    width: 100%;
+    height: 200px;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    background: black;
+    color: white;
+}
+
+.fa-facebook:hover {
+    color: rgb(235, 0, 139);
+}
+
+.fa-instagram:hover {
+    color: rgb(0, 174, 239);
+
+}
+
+.fa-twitter:hover {
+    color: rgb(255, 242, 0);
+}
+
+.fa-phone:hover {
+    color: rgb(235, 0, 139);
+}
 
 
 
@@ -542,7 +582,7 @@ input:hover {
     .nav {
         position: relative;
         display: block;
-        right: 20%;
+        right: 35%;
     }
 
     .nav ul li {
@@ -624,18 +664,6 @@ input:hover {
 
 
 
-    /*     #eerste {
-        display: flex;
-       
-    }
-
-    .container div {
-        margin-right: 10%;
-    }
-
-    .contact {
-        position: relative;
-    } */
 
     .contact {
         width: 100%;
@@ -694,13 +722,6 @@ input:hover {
 
     /* TRAJECT */
     /* The actual timeline (the vertical ruler) */
-    .line {
-        position: relative;
-        max-width: 800px;
-        margin: 0 auto;
-    }
-
-    /* The actual timeline (the vertical ruler) */
     .line::after {
         content: '';
         position: absolute;
@@ -716,7 +737,7 @@ input:hover {
     .container {
         position: relative;
         background-color: inherit;
-        width: 50%;
+        width: 40%;
     }
 
     /* The circles on the timeline */
@@ -755,14 +776,14 @@ input:hover {
         left: 50%;
     }
 
-    .line h1 {
+    h1 {
         color: white;
         text-align: center;
     }
 
     /* Circle the right side */
     .right::after {
-        left: -15px;
+        left: -13px;
     }
 
     /* The actual content */
@@ -780,9 +801,24 @@ input:hover {
         top: 50px;
     }
 
+    .line {
+        margin-bottom: 100px;
+    }
+
     .logo-draaien {
         display: none;
     }
 
-    
+
+    /* footer */
+
+    footer {
+        position: relative;
+        bottom: -260px;
+
+    }
+
+    .fa {
+        width: 150px;
+    }
 }
