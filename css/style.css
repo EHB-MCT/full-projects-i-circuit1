@@ -131,8 +131,6 @@ nav ul li:last-child:hover {
 
 
 
-
-
 .change #menu {
     overflow: hidden;
 
@@ -304,9 +302,9 @@ over ons */
 
 }
 
+
+
 /* traject */
-
-
 
 /* The actual timeline (the vertical ruler) */
 .line {
@@ -695,7 +693,6 @@ input:hover {
 
 
     /* TRAJECT */
-
     /* The actual timeline (the vertical ruler) */
     .line {
         position: relative;
@@ -736,12 +733,14 @@ input:hover {
     }
 
     .container.left::after {
+        position: relative;
         content: '';
         position: absolute;
         width: 20px;
         height: 20px;
         background-color: white;
         top: 100px;
+        left: 385px;
         border-radius: 50%;
         z-index: 1;
     }
@@ -784,4 +783,6 @@ input:hover {
     .logo-draaien {
         display: none;
     }
+
+    
 }
