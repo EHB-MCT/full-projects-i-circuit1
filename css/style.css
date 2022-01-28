@@ -133,8 +133,6 @@ nav ul li:last-child:hover {
 
 
 
-
-
 .change #menu {
     overflow: hidden;
 
@@ -306,9 +304,9 @@ over ons */
 
 }
 
+
+
 /* traject */
-
-
 
 /* The actual timeline (the vertical ruler) */
 .line {
@@ -728,7 +726,6 @@ footer {
 
 
     /* TRAJECT */
-
     /* The actual timeline (the vertical ruler) */
     .line::after {
         content: '';
@@ -760,6 +757,20 @@ footer {
         z-index: 1;
     }
 
+    <<<<<<< HEAD=======.container.left::after {
+        position: relative;
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background-color: white;
+        top: 100px;
+        left: 385px;
+        border-radius: 50%;
+        z-index: 1;
+    }
+
+    >>>>>>>3e6f5d56abb6dcfa9ef8b60f3c03993cdb571023
 
     /* Place the container to the left */
     .left {
