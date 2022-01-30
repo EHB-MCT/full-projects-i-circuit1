@@ -727,6 +727,22 @@ footer {
 
     /* TRAJECT */
     /* The actual timeline (the vertical ruler) */
+    /* NOISE */
+
+    .noise {
+        position: absolute;
+        /* height: 100%; */
+        bottom: 20px;
+        left: 97.4%;
+    }
+
+    .noise-links {
+        position: absolute;
+        /* height: 100%; */
+        bottom: 20px;
+        right: 99%;
+    }
+
     .line::after {
         content: '';
         position: absolute;
@@ -757,7 +773,8 @@ footer {
         z-index: 1;
     }
 
-    <<<<<<< HEAD=======.container.left::after {
+
+    .container.left::after {
         position: relative;
         content: '';
         position: absolute;
@@ -770,7 +787,6 @@ footer {
         z-index: 1;
     }
 
-    >>>>>>>3e6f5d56abb6dcfa9ef8b60f3c03993cdb571023
 
     /* Place the container to the left */
     .left {
@@ -1001,6 +1017,8 @@ footer {
         animation: moveToP1Right 0.5s ease-in-out;
     }
 
+
+
     @keyframes moveOutLeft {
         0% {
             transform: scale(0.75) translateX(0%);
@@ -1137,12 +1155,12 @@ footer {
         }
     }
 
-    .noise img {
+    /* .noise img {
         position: absolute;
         right: -120px;
         bottom: 20px;
         width: 500px;
-    }
+    } */
 
 
     /* footer */
