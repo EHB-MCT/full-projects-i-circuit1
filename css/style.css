@@ -181,10 +181,7 @@ header img {
 
 
 
-
 /* carousel */
-
-
 
 .slider {
     display: grid;
@@ -281,12 +278,13 @@ header img {
     width: 100%;
 }
 
-/* 
-over ons */
+/* over ons */
 
 .over-ons {
     padding-bottom: 100px;
     padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .over-ons a {
@@ -302,6 +300,11 @@ over ons */
 .over-ons a:hover {
     border: 2px solid rgb(235, 0, 139);
 
+}
+
+.map {
+    position: relative;
+    left: 80%;
 }
 
 
@@ -410,12 +413,6 @@ over ons */
     color: rgb(235, 0, 139);
 
 }
-
-
-
-
-
-
 
 
 
@@ -1164,7 +1161,7 @@ footer {
 
 
     /* footer */
- 
+
 
     .fa {
         width: 150px;
