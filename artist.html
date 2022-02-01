@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>3d-carousal</title>
+    <title>CIRCUIT|Artiesten</title>
     <!--     <link rel="stylesheet" type="text/css" href="css/webstyle.css"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/reset.css" rel="stylesheet">
@@ -45,59 +45,54 @@
 
             <div class="tijdlijn">
                 <div class="dates">
-                    <a href="#" class="date">2019</a>
-                    <a href="#" class="date">2020</a>
-                    <a href="#" class="date">2021</a>
+                    <a href="#2020" class="date">2020</a>
+                    <a href="#2021" class="date">2021</a>
                     <a href="#" class="date">2022</a>
+                    <a href="#" class="date">2023</a>
                 </div>
             </div>
 
-            <div class="containerArtist">
-
-                <div class="buttonArtist" onclick="shiftLeft()"><img src="images/arrow-left.png" alt=""></div>
-                <div class="cards-wrapper">
-                    <ul class="cards__containerArtist">
-                        <li class="box"><img src="images/mobile-begin-1.png"></li>
-                        <li class="box"><img src="images/mobile-begin-2.png"></li>
-                        <li class="box"><img src="images/mobile-begin-3.png"></li>
-                        <li class="box"><img src="images/mobile-begin-4.png"></li>
-                        <li class="box box--hide"><img src="images/mobile-begin-5.png"></li>
-                        <li class="box box--hide"><img src="images/mobile-begin-6.png"></li>
-                    </ul>
-                    <div class="card__text-content">
-                        <h3 class="card__title">The Famous Five</h3>
-                        <div class="card__summary">The Famous Five is a series of children's adventure novels written by
-                            English
-                            author Enid Blyton. The first book, Five on a Treasure Island, was published in 1942.</div>
-                    </div>
+            <!-- foto's -->
+            <div class="artist" id="2020">
+                <h1>2020</h1>
+                <div class="artist-container">
+                    <img src="images/mobile-1.jpg">
+                    <img src="images/mobile-2.jpg">
+                    <img src="images/mobile-3.jpg">
+                    <img src="images/mobile-4.jpg">
                 </div>
-                <div class="buttonArtist" onclick="shiftRight()"><img src="images/arrow-right.png" alt=""></div>
+                <div class="artist-container">
+                    <img src="images/mobile-5.jpg">
+                    <img src="images/mobile-6.jpg">
+                    <img src="images/mobile-1.jpg">
+                    <img src="images/mobile-2.jpg">
+                </div>
             </div>
 
-            <div class="containerArtist">
-
-                <div class="buttonArtist" onclick="shiftLeft()"><img src="images/arrow-left.png" alt=""></div>
-                <div class="cards-wrapper">
-                    <ul class="cards__container">
-                        <li class="box"><img src="images/mobile-begin-1.png"></li>
-                        <li class="box"><img src="images/mobile-begin-2.png"></li>
-                        <li class="box"><img src="images/mobile-begin-3.png"></li>
-                        <li class="box"><img src="images/mobile-begin-4.png"></li>
-                        <li class="box box--hide"><img src="images/mobile-begin-5.png"></li>
-                        <li class="box box--hide"><img src="images/mobile-begin-6.png"></li>
-                    </ul>
-                    <div class="card__text-content">
-                        <h3 class="card__title">The Famous Five</h3>
-                        <div class="card__summary">The Famous Five is a series of children's adventure novels written by
-                            English
-                            author Enid Blyton. The first book, Five on a Treasure Island, was published in 1942.</div>
-                    </div>
+            <div class="artist" id="2021">
+                <h1>2021</h1>
+                <div class="artist-container">
+                    <img src="images/mobile-1.jpg">
+                    <img src="images/mobile-2.jpg">
+                    <img src="images/mobile-3.jpg">
+                    <img src="images/mobile-4.jpg">
                 </div>
-                <div class="buttonArtist" onclick="shiftRight()"><img src="images/arrow-right.png" alt=""></div>
+                <div class="artist-container">
+                    <img src="images/mobile-5.jpg">
+                    <img src="images/mobile-6.jpg">
+                    <img src="images/mobile-1.jpg">
+                    <img src="images/mobile-2.jpg">
+                </div>
             </div>
         </div>
-    </div>
-    <script src='js/index.js'></script>
+
+        <script>
+            function onClickMenu() {
+                document.getElementById("menu").classList.toggle("change");
+                document.getElementById("nav").classList.toggle("change")
+            }
+        </script>
+        <!--         <script src='js/index.js'></script> -->
 </body>
 
 </html>
