@@ -771,7 +771,7 @@ footer {
         height: 1500px;
         margin-right: -30%;
         overflow-x: hidden;
-        direction: rtl;
+
     }
 
 
@@ -916,7 +916,7 @@ footer {
 
     .artist {
         margin-left: 5%;
-        margin-top: 100px;
+        margin-top: 20px;
     }
 
     .artist-container {
@@ -930,6 +930,53 @@ footer {
         margin-top: 5%;
     }
 
+
+    .flip-card {
+        background-color: transparent;
+        width: 300px;
+        height: 300px;
+        perspective: 1000px;
+        margin-right: 5%;
+        margin-top: 100px;
+    }
+
+    .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+    }
+
+    .flip-card-front,
+    .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+
+    .flip-card-back {
+        top: 50%;
+    }
+
+
+    .flip-card-back {
+        background-color: black;
+        color: white;
+        transform: rotateY(180deg);
+    }
+
+    .flip-card img {
+        width: 100%;
+    }
 
     /* .noise img {
         position: absolute;
