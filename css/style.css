@@ -5,7 +5,9 @@ html {
     scroll-behavior: smooth;
 }
 
-
+body {
+    background-color: black;
+}
 
 .outer-wrapper-home {
     width: 100%;
@@ -271,12 +273,17 @@ header img {
 
 }
 
-/* 
-over ons */
+/* over ons */
 
 .over-ons {
     padding-bottom: 100px;
     padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.over-ons-text {
+    width: 100%;
 }
 
 .over-ons a {
@@ -291,9 +298,18 @@ over ons */
 
 .over-ons a:hover {
     border: 2px solid rgb(235, 0, 139);
-
 }
 
+section div.map {
+    width: 50%;
+    position: relative;
+    text-align: right;
+    display: none;
+}
+
+section.over-ons {
+    width: 100%;
+}
 
 
 /* traject */
@@ -976,5 +992,45 @@ footer {
         width: 150px;
     }
 
+
+    /* over ons */
+
+    .over-ons {
+        padding-bottom: 100px;
+        padding-top: 100px;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .over-ons-text {
+        width: 50%;
+        padding-right: 30px;
+    }
+
+    .over-ons a {
+        position: relative;
+        text-decoration: none;
+        color: white;
+        top: 50px;
+        padding: 15px;
+        font-weight: medium;
+        border: 2px solid white;
+    }
+
+    .over-ons a:hover {
+        border: 2px solid rgb(235, 0, 139);
+    }
+
+    section div.map {
+        width: 50%;
+        position: relative;
+        text-align: right;
+        display: block;
+    }
+
+    section.over-ons {
+        width: 100%;
+    }
 
 }
