@@ -8,6 +8,7 @@
     <link href="css/reset.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://use.typekit.net/srb0kqy.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -56,10 +57,112 @@
             <div class="artist" id="2020">
                 <h1>2020</h1>
                 <div class="artist-container">
+                    <!-- foto1 -->
+
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front" onclick="document.getElementById('id01').style.display='block'"
+                                class="w3-button w3-black">
+                                <img src="images/mobile-1.jpg" class="artist-img">
+                            </div>
+                            <div class="flip-card-back" onclick="document.getElementById('id01').style.display='block'"
+                                class="w3-button w3-black">
+                                <h1>Mark Lee</h1>
+                                <p>Rapper</p>
+                                <p>@marklee_rapper</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="id01" class="w3-modal">
+                        <div class="w3-modal-content">
+                            <div class="w3-container">
+                                <span onclick="document.getElementById('id01').style.display='none'"
+                                    class="w3-button w3-display-topright">&times;</span>
+                                <div class="W3-modal-conent-inner">
+                                    <div>
+                                        <img src="images/mobile-1.jpg">
+                                    </div>
+                                    <div>
+                                        <h1>Mark Lee</h1>
+                                        <h2>Rapper</h2>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi quisquam
+                                            velit
+                                            dicta sed quibusdam voluptates quasi debitis perspiciatis nostrum ut
+                                            aliquid
+                                            rerum qui ex tenetur eveniet asperiores nesciunt laborum facere et
+                                            expedita,
+                                            vitae sunt! Ab beatae, aliquid incidunt nostrum, molestias aspernatur
+                                            tempora omnis eligendi obcaecati perspiciatis, cumque a debitis in.
+                                        </p>
+                                        <a href="#" class="fa fa-instagram ">mark_leethe_rapper</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- foto2 -->
+
                     <div class="flip-card">
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
-                                <img src="images/mobile-1.jpg">
+                                <img src="images/mobile-2.jpg" class="artist-img">
+                            </div>
+                            <div class="flip-card-back" onclick="document.getElementById('id02').style.display='block'"
+                                class="w3-button w3-black">
+                                <h1>John Doe</h1>
+                                <p>Architect & Engineer</p>
+                                <p>We love that guy</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w3-container">
+                        <div id="id02" class="w3-modal">
+                            <div class="w3-modal-content">
+                                <div class="w3-container">
+                                    <span onclick="document.getElementById('id02').style.display='none'"
+                                        class="w3-button w3-display-topright">&times;</span>
+                                    <img src="images/mobile-2.jpg">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- foto3 -->
+
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="images/mobile-3.jpg" class="artist-img">
+                            </div>
+                            <div class="flip-card-back" onclick="document.getElementById('id02').style.display='block'"
+                                class="w3-button w3-black">
+                                <h1>John Doe</h1>
+                                <p>Architect & Engineer</p>
+                                <p>We love that guy</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w3-container">
+                        <div id="id03" class="w3-modal">
+                            <div class="w3-modal-content">
+                                <div class="w3-container">
+                                    <span onclick="document.getElementById('id03').style.display='none'"
+                                        class="w3-button w3-display-topright">&times;</span>
+                                    <img src="images/mobile-3.jpg">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="images/mobile-4.jpg" class="artist-img">
                             </div>
                             <div class="flip-card-back">
                                 <h1>John Doe</h1>
@@ -69,121 +172,102 @@
                         </div>
                     </div>
 
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <img src="images/mobile-2.jpg">
-                            </div>
-                            <div class="flip-card-back">
-                                <h1>John Doe</h1>
-                                <p>Architect & Engineer</p>
-                                <p>We love that guy</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <img src="images/mobile-3.jpg">
-                            </div>
-                            <div class="flip-card-back">
-                                <h1>John Doe</h1>
-                                <p>Architect & Engineer</p>
-                                <p>We love that guy</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <img src="images/mobile-4.jpg">
-                            </div>
-                            <div class="flip-card-back">
-                                <h1>John Doe</h1>
-                                <p>Architect & Engineer</p>
-                                <p>We love that guy</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="artist-container">
 
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <img src="images/mobile-1.jpg">
-                            </div>
-                            <div class="flip-card-back">
-                                <h1>John Doe</h1>
-                                <p>Architect & Engineer</p>
-                                <p>We love that guy</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <img src="images/mobile-2.jpg">
-                            </div>
-                            <div class="flip-card-back">
-                                <h1>John Doe</h1>
-                                <p>Architect & Engineer</p>
-                                <p>We love that guy</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <img src="images/mobile-3.jpg">
-                            </div>
-                            <div class="flip-card-back">
-                                <h1>John Doe</h1>
-                                <p>Architect & Engineer</p>
-                                <p>We love that guy</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <img src="images/mobile-4.jpg">
-                            </div>
-                            <div class="flip-card-back">
-                                <h1>John Doe</h1>
-                                <p>Architect & Engineer</p>
-                                <p>We love that guy</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="artist" id="2021">
-                    <h1>2021</h1>
-                    <div class="artist-container">
-                        <img src="images/mobile-1.jpg">
-                        <img src="images/mobile-2.jpg">
-                        <img src="images/mobile-3.jpg">
-                        <img src="images/mobile-4.jpg">
-                    </div>
-                    <div class="artist-container">
-                        <img src="images/mobile-5.jpg">
-                        <img src="images/mobile-6.jpg">
-                        <img src="images/mobile-1.jpg">
-                        <img src="images/mobile-2.jpg">
-                    </div>
                 </div>
             </div>
+            <div class="artist-container">
 
-            <script>
-                function onClickMenu() {
-                    document.getElementById("menu").classList.toggle("change");
-                    document.getElementById("nav").classList.toggle("change")
-                }
-            </script>
-            <!--         <script src='js/index.js'></script> -->
+                <div class="flip-card" onclick="bigger()">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/mobile-1.jpg" class="artist-img">
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>John Doe</h1>
+                            <p>Architect & Engineer</p>
+                            <p>We love that guy</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/mobile-2.jpg" class="artist-img">
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>John Doe</h1>
+                            <p>Architect & Engineer</p>
+                            <p>We love that guy</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/mobile-3.jpg">
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>John Doe</h1>
+                            <p>Architect & Engineer</p>
+                            <p>We love that guy</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/mobile-4.jpg">
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>John Doe</h1>
+                            <p>Architect & Engineer</p>
+                            <p>We love that guy</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--        <div class="artist" id="2021">
+                <h1>2021</h1>
+                <div class="artist-container">
+                    <img src="images/mobile-1.jpg">
+                    <img src="images/mobile-2.jpg">
+                    <img src="images/mobile-3.jpg">
+                    <img src="images/mobile-4.jpg">
+                </div>
+                <div class="artist-container">
+                    <img src="images/mobile-5.jpg">
+                    <img src="images/mobile-6.jpg">
+                    <img src="images/mobile-1.jpg">
+                    <img src="images/mobile-2.jpg">
+                </div>
+            </div> -->
+
+            <footer>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-phone"></a>
+
+            </footer>
+        </div>
+
+        <script>
+            let img = document.getElementsByClassName("artist-img");
+
+            function onClickMenu() {
+                document.getElementById("menu").classList.toggle("change");
+                document.getElementById("nav").classList.toggle("change")
+            }
+
+            function bigger() {
+                img.style.transform = "scale(1.5)";
+                /* img.style.transition = "transform 0.25s ease"; */
+            }
+        </script>
+        <!--         <script src='js/index.js'></script> -->
 </body>
 
 </html>
