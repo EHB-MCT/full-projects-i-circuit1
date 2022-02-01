@@ -495,8 +495,6 @@ input[type=text] {
     border: 3px solid transparent;
 }
 
-
-
 input:hover {
     border: 3px solid rgb(235, 0, 139);
 }
@@ -513,8 +511,8 @@ input:hover {
     margin-top: 20px;
 }
 
-
-.btn {
+/* Vertuur button */
+button {
     position: relative;
     text-decoration: none;
     color: white;
@@ -522,7 +520,13 @@ input:hover {
     padding: 15px;
     font-weight: medium;
     border: 2px solid white;
+    background-color: transparent;
 }
+
+button:hover {
+    border: 2px solid rgb(235, 0, 139);
+}
+
 
 
 .container-contact a:hover {
@@ -534,7 +538,6 @@ input:hover {
     color: white;
 
 }
-
 
 
 .verantw {
