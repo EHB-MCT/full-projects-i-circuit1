@@ -42,37 +42,33 @@
 
             </header>
             <div class="contact">
-
-                <h1>Contacteer ons</h1>
-
                 <div class="container-contact">
 
-                    <div id="eerste">
-                        <div>
-                            <label for="naam"><b>Naam</b></label>
+                    <form action="https://formsubmit.co/mey-lin.mus@student.ehb.be" method="POST">
 
-                            <input type="text" placeholder="Naam" name="naam" required>
+                        <div id="eerste">
+                            <div>
+                                <label for="naam"><b>Naam</b></label>
+                                <input type="text" placeholder="naam" name="naam" required>
+                            </div>
+
+                            <div>
+                                <label for="telefoonnummer"><b>Telefoonnummer</b></label>
+                                <input type="text" placeholder="telefoonnummer" name="telefoonnummer" required>
+                            </div>
+
+                            <div>
+                                <label for="geboortedatum"><b>Geboortedatum</b></label>
+                                <input type="text" placeholder="dd/mm/jj" name="geboortedatum" required>
+                            </div>
                         </div>
-                        <div>
-                            <label for="telefoonnummer"><b>Telefoonnummer</b></label>
 
-                            <input type="text" placeholder="Nummer" name="naam" required>
+                        <div id="tweede">
+                            <label for="motivatie"><b>Motivatie</b></label>
+                            <input type="text" placeholder="motivatie" name="motivatie" required style="height: 80px;">
                         </div>
-                        <div>
-                            <label for="naam"><b>Geboortedatum</b></label>
-
-                            <input type="text" placeholder="dd/mm/jj" name="naam" required>
-                        </div>
-                    </div>
-                    <div id="tweede">
-                        <label for="naam"><b>Motivatie</b></label>
-
-                        <input type="text" placeholder="Motivatie" name="naam" required style="height: 80px;">
-                    </div>
-
-                    <a href="#" class="btn">VERSTUUR</a>
-
-
+                        <button type="submit">VERSTUUR</button>
+                    </form>
                 </div>
 
 
