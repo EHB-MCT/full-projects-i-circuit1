@@ -961,6 +961,10 @@ footer {
         padding-right: 30px;
     }
 
+    .over-ons-text p {
+        font-size: larger;
+    }
+
     .over-ons a {
         position: relative;
         text-decoration: none;
@@ -976,7 +980,8 @@ footer {
     }
 
     section div.map {
-        width: 50%;
+        margin-top: 2%;
+        width: 70%;
         position: relative;
         text-align: right;
         display: block;
@@ -986,4 +991,7 @@ footer {
         width: 100%;
     }
 
+    .map img {
+        width: 70%;
+    }
 }
