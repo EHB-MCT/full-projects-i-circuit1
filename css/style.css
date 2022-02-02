@@ -131,9 +131,8 @@ nav ul li:nth-child(3):hover {
 nav ul li:last-child:hover {
     border: 2px solid rgb(235, 0, 139);
     border-radius: 100%;
+
 }
-
-
 
 .change #menu {
     overflow: hidden;
