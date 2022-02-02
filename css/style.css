@@ -114,7 +114,7 @@ nav li a {
 }
 
 /* nav hover */
-nav ul li :first-child:hover {
+nav ul li:first-child:hover {
     border: 2px solid rgb(235, 0, 139);
     border-radius: 100%;
 }
@@ -139,24 +139,20 @@ nav ul li:last-child:hover {
 
 .change #menu {
     overflow: hidden;
-
 }
 
 .change #bar1 {
     transform: translateY(2px) rotateZ(45deg);
     transition-duration: 0.2s;
-
 }
 
 .change #bar2 {
     display: none;
-
 }
 
 .change #bar3 {
     transform: translateY(-2px) rotateZ(-45deg);
     transition-duration: 0.2s;
-
 }
 
 .nav.change {
@@ -169,7 +165,6 @@ nav ul li:last-child:hover {
 }
 
 nav ul li {
-
     margin: 30px 20px 20px 20px;
 
 }
@@ -182,6 +177,7 @@ nav a {
 header img {
     max-width: 300px;
 }
+
 
 
 
