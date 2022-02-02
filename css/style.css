@@ -112,7 +112,7 @@ nav li a {
 }
 
 /* nav hover */
-nav ul li:first-child:hover {
+nav ul li :first-child:hover {
     border: 2px solid rgb(235, 0, 139);
     border-radius: 100%;
 }
