@@ -43,6 +43,13 @@
 
         </header>
 
+
+
+
+
+
+
+
         <!-- accordeon mobile versie -->
         <div class="wrapper-accordeon">
             <button class="accordion">2020</button>
@@ -747,7 +754,7 @@
                 if (panel.style.maxHeight) {
                     panel.style.maxHeight = null;
                 } else {
-                    panel.style.maxHeight = panel.scrollHeight + "px";
+                    panel.style.maxHeight = panel.scrollHeight * 20 + "px";
                 }
             });
 
@@ -766,12 +773,6 @@
             } else {
                 mybutton.style.display = "none";
             }
-        }
-
-        // When the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
         }
     </script>
     <!--         <script src='js/index.js'></script> -->
