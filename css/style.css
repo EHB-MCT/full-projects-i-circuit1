@@ -1127,7 +1127,6 @@ footer {
     }
 
     .artist {
-        display: flex;
         margin-left: 5%;
         margin-top: 30px;
     }
@@ -1150,6 +1149,7 @@ footer {
         width: 15%;
         /* height: 300px; */
         perspective: 1000px;
+        margin-right: 5%;
         margin-top: 100px;
         margin-bottom: 15%;
         cursor: pointer;
@@ -1161,7 +1161,6 @@ footer {
         height: 100%;
         text-align: center;
         transition: transform 0.6s;
-        margin-right: 50px;
         transform-style: preserve-3d;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     }
@@ -1195,7 +1194,7 @@ footer {
 
     .flip-card img {
         width: 300px;
-
+        margin-right: 100px;
     }
 
     .w3-container {
