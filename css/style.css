@@ -13,7 +13,7 @@ body {
     width: 100%;
     background-color: black;
     color: white;
-    line-height: 1.5;
+
 }
 
 
@@ -24,13 +24,14 @@ body {
     font-family: futura-pt, sans-serif;
     font-weight: 400;
     font-style: normal;
+    line-height: 1.5;
 }
 
 .outer-wrapper-contact {
     width: 100%;
     background-color: black;
     color: white;
-    line-height: 1.5;
+
 }
 
 .wrapper-contact {
@@ -39,6 +40,7 @@ body {
     margin-right: 10%;
     font-family: futura-pt, sans-serif;
     font-weight: 400;
+    line-height: 1.5;
     font-style: normal;
 }
 
@@ -363,7 +365,6 @@ section.over-ons {
 
 .line {
     color: white;
-    text-align: center;
     font-size: 48px;
 }
 
@@ -423,8 +424,8 @@ section.over-ons {
     display: none;
 }
 
-#button-contact {
-    position: absolute;
+#contact-button {
+    position: relative;
     text-decoration: none;
     color: white;
     top: 50px;
@@ -434,8 +435,13 @@ section.over-ons {
     text-align: center;
 }
 
-#button-contact:hover {
+#contact-button:hover {
     border: 2px solid rgb(235, 0, 139);
+}
+
+.line .left,
+.right {
+    margin-bottom: 70px;
 }
 
 /* artist */
@@ -476,8 +482,8 @@ section.over-ons {
 .accordion,
 .panel {
     border-bottom: 2px solid white;
-    border-top: 2px solid white;
 }
+
 
 
 /* symbols naast accordeon */
@@ -512,7 +518,15 @@ section.over-ons {
 
 }
 
+.panel :hover {
+    color: rgb(235, 0, 139);
+}
+
 .artist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
     font-family: futura-pt, sans-serif;
 }
@@ -554,6 +568,12 @@ section.over-ons {
 .w3-container {
     background-color: black;
     text-align: center;
+    word-wrap: none;
+
+}
+
+.w3-modal {
+    width: 50%;
 }
 
 .W3-modal-conent-inner a {
@@ -1049,6 +1069,10 @@ footer {
         margin-bottom: 100px;
     }
 
+    #contact-button {
+        text-align: center;
+    }
+
     /* artists */
 
     .wrapper-accordeon {
@@ -1103,10 +1127,9 @@ footer {
     }
 
     .artist {
+        display: flex;
         margin-left: 5%;
         margin-top: 30px;
-        display: flex;
-        flex-wrap: wrap;
     }
 
     .artist .jaar {
@@ -1114,16 +1137,8 @@ footer {
 
     }
 
-    .artist-container {
-        display: flex;
-        /* flex-wrap: nowrap; */
-    }
 
 
-    .flip-card-inner img {
-        height: 20%;
-        padding: 0px;
-    }
 
     .W3-modal-conent-inner :first-child {
         position: relative;
@@ -1132,10 +1147,9 @@ footer {
 
     .flip-card {
         background-color: transparent;
-        width: 20%;
+        width: 15%;
         /* height: 300px; */
         perspective: 1000px;
-        margin-right: 5%;
         margin-top: 100px;
         margin-bottom: 15%;
         cursor: pointer;
@@ -1147,6 +1161,7 @@ footer {
         height: 100%;
         text-align: center;
         transition: transform 0.6s;
+        margin-right: 50px;
         transform-style: preserve-3d;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     }
@@ -1179,7 +1194,8 @@ footer {
 
 
     .flip-card img {
-        width: 100%;
+        width: 300px;
+
     }
 
     .w3-container {
