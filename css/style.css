@@ -450,6 +450,7 @@ section.over-ons {
     height: 100%;
 }
 
+
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
     background-color: black;
@@ -522,7 +523,7 @@ section.over-ons {
     color: rgb(235, 0, 139);
 }
 
-.artist {
+.artist-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -530,6 +531,8 @@ section.over-ons {
     width: 100%;
     font-family: futura-pt, sans-serif;
 }
+
+
 
 .flip-card {
     width: 40%;
@@ -549,13 +552,6 @@ section.over-ons {
     margin-top: 50px;
 }
 
-.artist-container {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin-top: 0px;
-    flex-wrap: wrap;
-}
 
 
 /* on click images */
@@ -587,6 +583,7 @@ section.over-ons {
 .name-list,
 .dates {
     display: none;
+    font-family: futura-pt, sans-serif !important;
 }
 
 
@@ -1093,8 +1090,17 @@ footer {
         color: white;
     }
 
+    .name-list {
+        margin-top: 100px;
+        position: relative;
+        top: 80px;
+    }
+
     .name-list a {
         color: white;
+        position: relative;
+        top: 35px;
+        margin-left: 10px;
     }
 
     .dates {
@@ -1131,13 +1137,18 @@ footer {
         margin-top: 30px;
     }
 
+
+
     .artist .jaar {
         position: relative;
 
     }
 
 
-
+    .artist img {
+        width: 300px;
+        padding: 0px;
+    }
 
     .W3-modal-conent-inner :first-child {
         position: relative;
@@ -1151,7 +1162,7 @@ footer {
         perspective: 1000px;
         margin-right: 5%;
         margin-top: 100px;
-        margin-bottom: 15%;
+        margin-bottom: 50px;
         cursor: pointer;
     }
 
@@ -1193,8 +1204,11 @@ footer {
 
 
     .flip-card img {
-        width: 300px;
-        margin-right: 100px;
+        width: 100%;
+    }
+
+    .artist-container {
+        justify-content: center;
     }
 
     .w3-container {
