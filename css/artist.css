@@ -1,0 +1,313 @@
+.wrapper-accordeon {
+    height: 100%;
+}
+
+
+Style the buttons that are used to open and close the accordion panel .accordion {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.accordion:hover {
+    background-color: black;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 0 18px;
+    background-color: black;
+    display: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.accordion,
+.panel {
+    border-bottom: 2px solid white;
+}
+
+
+
+/* symbols naast accordeon */
+.accordion:after {
+    content: '';
+    /* Unicode character for "plus" sign (+) */
+    width: 10px;
+    height: 10px;
+    float: right;
+    margin-left: 5px;
+    border-left: 2px solid white;
+    border-bottom: 2px solid white;
+    transform: rotate(45deg);
+}
+
+.active.accordion:after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    float: right;
+    transform: rotate(90deg);
+
+    /* Unicode character for "minus" sign (-) */
+}
+
+.panel ul li {
+    padding-bottom: 20px;
+}
+
+.panel ul li {
+    cursor: pointer;
+
+}
+
+.panel :hover {
+    color: rgb(235, 0, 139);
+}
+
+
+
+.artist .jaar {
+    position: relative;
+
+}
+
+.artist-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    font-family: futura-pt, sans-serif;
+}
+
+
+.artist-img1,
+.artist-img2,
+.artist-img3,
+.artist-img4,
+.artist-img5,
+.artist-img6,
+.artist-img7,
+.artist-img8 {
+    display: flex;
+}
+
+
+.artist-img2 {
+    margin-left: 20px;
+}
+
+.flip-card {
+    width: 40%;
+    cursor: pointer;
+    margin-bottom: 5%;
+}
+
+.flip-card-front img {
+    width: 100%;
+}
+
+
+
+.flip-card-back {
+    display: none;
+}
+
+.artist {
+    margin-top: 50px;
+}
+
+
+
+/* on click images */
+.w3-modal img {
+    width: 40%;
+    margin-top: 20px;
+    height: auto;
+}
+
+.w3-container {
+    background-color: black;
+    text-align: center;
+    word-wrap: none;
+
+}
+
+.w3-modal {
+    width: 50%;
+}
+
+.W3-modal-conent-inner a {
+    text-decoration: none !important;
+    display: block;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.name-list,
+.dates {
+    display: none;
+    font-family: futura-pt, sans-serif !important;
+}
+
+
+
+/* contact */
+
+.container {
+    margin-top: 20px;
+    width: 100%;
+    background-color: black;
+}
+
+
+input[type=text] {
+
+    width: 90%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: white;
+    border: 3px solid transparent;
+}
+
+
+.container-contact button {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    top: 20px;
+    padding: 15px;
+    font-weight: medium;
+    border: 2px solid white;
+    background-color: transparent;
+    font-family: futura-pt, sans-serif;
+}
+
+button:hover {
+    border: 2px solid rgb(235, 0, 139);
+}
+
+input:hover {
+    border: 3px solid rgb(235, 0, 139);
+}
+
+.contact {
+
+    padding: 16px 20px 16px 0px;
+    border: none;
+    width: 100%;
+}
+
+.container-contact {
+    margin-top: 20px;
+}
+
+
+.btn {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    top: 20px;
+    padding: 15px;
+    font-weight: medium;
+    border: 2px solid white;
+}
+
+
+.container-contact a:hover {
+
+    border: 2px solid rgb(235, 0, 139);
+}
+
+.verantw a {
+    color: white;
+
+}
+
+
+
+.verantw {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.locatie {
+    position: relative;
+    margin-top: 50px;
+}
+
+.adress {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.adress div {
+    margin-bottom: 50px;
+}
+
+
+#google-map-inner {
+    border-top: 8px double rgb(0, 174, 239);
+    border-bottom: 8px double rgb(235, 0, 139);
+    border-left: 8px double rgb(255, 242, 0);
+    border-right: 8px double rgb(255, 242, 0);
+    padding: 10px;
+}
+
+/* background-design  */
+.wrapper-drawing {
+    position: absolute;
+    bottom: 500px;
+    width: 250px;
+    height: 20%;
+    background-color: white;
+    right: 0;
+    bottom: 0px;
+
+}
+
+.line-drawing {
+    position: relative;
+
+}
+
+#line-one {
+    position: absolute;
+    width: 10%;
+    height: 100%;
+    left: 40%;
+    background: rgb(0, 174, 239);
+    transform: rotate(40deg);
+}
+
+#line-two {
+    position: absolute;
+    width: 10%;
+    height: 100%;
+    left: 3%;
+    top: 100px;
+    background: rgb(235, 0, 139);
+    transform: rotate(40deg);
+}
+
+#line-three {
+    position: absolute;
+    width: 10%;
+    height: 100%;
+    left: 20%;
+    top: 200px;
+    background: rgb(255, 242, 0);
+    transform: rotate(40deg);
+}

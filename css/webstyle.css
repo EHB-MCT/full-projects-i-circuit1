@@ -84,14 +84,14 @@ img {
 }
 
 .box {
-    /*     margin: -1.5rem; */
+    margin: -1.5rem;
     width: 12rem;
     height: 20rem;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    /* transition: 1s all; */
+    transition: 1s all;
 }
 
 .box:nth-child(2n) {

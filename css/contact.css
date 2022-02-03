@@ -1,0 +1,173 @@
+.container {
+    margin-top: 20px;
+    width: 100%;
+    background-color: black;
+}
+
+
+input[type=text] {
+
+    width: 90%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: white;
+    border: 3px solid transparent;
+}
+
+
+.container-contact button {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    top: 20px;
+    padding: 15px;
+    font-weight: medium;
+    border: 2px solid white;
+    background-color: transparent;
+    font-family: futura-pt, sans-serif;
+}
+
+button:hover {
+    border: 2px solid rgb(235, 0, 139);
+}
+
+input:hover {
+    border: 3px solid rgb(235, 0, 139);
+}
+
+.contact {
+
+    padding: 16px 20px 16px 0px;
+    border: none;
+    width: 100%;
+}
+
+.container-contact {
+    margin-top: 20px;
+}
+
+
+.btn {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    top: 20px;
+    padding: 15px;
+    font-weight: medium;
+    border: 2px solid white;
+}
+
+
+.container-contact a:hover {
+
+    border: 2px solid rgb(235, 0, 139);
+}
+
+.verantw a {
+    color: white;
+
+}
+
+
+
+.verantw {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.locatie {
+    position: relative;
+    margin-top: 50px;
+}
+
+.adress {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.adress div {
+    margin-bottom: 50px;
+}
+
+
+#google-map-inner {
+    border-top: 8px double rgb(0, 174, 239);
+    border-bottom: 8px double rgb(235, 0, 139);
+    border-left: 8px double rgb(255, 242, 0);
+    border-right: 8px double rgb(255, 242, 0);
+    padding: 10px;
+}
+
+
+.wrapper-drawing {
+    position: absolute;
+    bottom: 500px;
+    width: 250px;
+    height: 20%;
+    background-color: white;
+    right: 0;
+    bottom: 0px;
+
+}
+
+.line-drawing {
+    position: relative;
+
+}
+
+#line-one {
+    position: absolute;
+    width: 10%;
+    height: 100%;
+    left: 40%;
+    background: rgb(0, 174, 239);
+    transform: rotate(40deg);
+}
+
+#line-two {
+    position: absolute;
+    width: 10%;
+    height: 100%;
+    left: 3%;
+    top: 100px;
+    background: rgb(235, 0, 139);
+    transform: rotate(40deg);
+}
+
+#line-three {
+    position: absolute;
+    width: 10%;
+    height: 100%;
+    left: 20%;
+    top: 200px;
+    background: rgb(255, 242, 0);
+    transform: rotate(40deg);
+}
+
+/* 
+#canvas {
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    height: 50%;
+    position: absolute;
+} */
+
+
+@media(min-width:768px) {
+    nav li {
+        border: 2px solid transparent;
+    }
+
+    .locatie {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .map {
+        width: 60%;
+    }
+}

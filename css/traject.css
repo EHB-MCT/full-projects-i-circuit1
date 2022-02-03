@@ -1,0 +1,133 @@
+/* The actual timeline (the vertical ruler) */
+.line {
+    position: relative;
+    width: 100%;
+    right: 0px;
+}
+
+/* The actual timeline (the vertical ruler) */
+.line::after {
+    content: '';
+    position: absolute;
+    width: 5px;
+    background-color: white;
+    top: 50px;
+    left: 0px;
+    bottom: 0;
+}
+
+/* Container around content */
+.container {
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: -7.5px;
+    margin-left: 4px;
+    background-color: white;
+    top: 50px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+    left: 0;
+}
+
+/* the right box */
+
+
+.line {
+    color: white;
+    font-size: 48px;
+}
+
+.line p {
+
+    font-size: 16px;
+}
+
+.line h2 {
+
+    font-size: 32px;
+    text-shadow: 2px 1.5px white;
+}
+
+
+
+
+/* Circle the right side */
+.right::after {
+    left: -7.5px;
+}
+
+
+/* The actual content */
+.content {
+    padding: 20px 30px;
+    position: relative;
+    border-radius: 6px;
+
+}
+
+.container p {
+    color: white;
+}
+
+.start {
+    color: rgb(235, 0, 139);
+
+}
+
+.begeleiding {
+    color: rgb(0, 174, 239);
+
+}
+
+.proces {
+    color: yellow;
+
+}
+
+.resultaat {
+    color: rgb(235, 0, 139);
+
+}
+
+.noise {
+    display: none;
+}
+
+#contact-button {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    top: 50px;
+    padding: 15px;
+    font-weight: medium;
+    border: 2px solid white;
+    text-align: center;
+}
+
+#contact-button:hover {
+    border: 2px solid rgb(235, 0, 139);
+}
+
+.line .left,
+.right {
+    margin-bottom: 70px;
+}
+
+
+.noise,
+.noise-links {
+    display: none;
+}
