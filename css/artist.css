@@ -1,6 +1,99 @@
+.wrapper-accordeon {
+    height: 100%;
+}
+
+/* 
+ Style the buttons that are used to open and close the accordion panel  */
+.accordion {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS),
+and when you move the mouse over it (hover) */
+.active,
+.accordion:hover {
+    background-color: black;
+}
+
+/* Style the accordion panel. Note: hidden by default  */
+.panel {
+    padding: 0 18px;
+    background-color: black;
+    display: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.accordion,
+.panel {
+    border-bottom: 2px solid white;
+}
+
+
+
+/* symbols naast accordeon */
+.accordion:after {
+    content: '';
+    /* Unicode character for "plus" sign (+) */
+    width: 10px;
+    height: 10px;
+    float: right;
+    margin-left: 5px;
+    border-left: 2px solid white;
+    border-bottom: 2px solid white;
+    transform: rotate(45deg);
+}
+
+.active.accordion:after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    float: right;
+    transform: rotate(90deg);
+
+    /* Unicode character for "minus" sign (-) */
+}
+
+.panel ul li {
+    padding-bottom: 20px;
+}
+
+.panel ul li {
+    cursor: pointer;
+
+}
+
+.panel :hover {
+    color: rgb(235, 0, 139);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .artist .jaar {
     position: relative;
-    margin-top: -70vh;
+
 }
 
 .artist-container {
@@ -29,25 +122,12 @@
 .artist-img5,
 .artist-img6,
 .artist-img7,
-.artist-img8,
-.artist-img10,
-.artist-img20,
-.artist-img30,
-.artist-img40,
-.artist-img50,
-.artist-img60,
-.artist-img70,
-.artist-img80 {
+.artist-img8 {
     display: flex;
 }
 
-.artist-img2,
-.artist-img20 {
-    margin-left: 20px;
-}
 
-
-
+/* bron: https: //www.w3schools.com/css/tryit.asp?filename=trycss_image_modal_js */
 
 .flip-card {
     width: 40%;
@@ -107,11 +187,10 @@
 .dates {
     display: none;
     font-family: futura-pt, sans-serif !important;
-    margin-bottom: 10%;
 }
 
 
-@media(min-width: 320px) {
+@media(max-width: 320px) {
     header img {
         max-width: 90%;
         margin-top: 10px;
@@ -130,7 +209,6 @@
     /*    .outer-wrapper {
         background-color: transparent;
     }
-
     .outer-wrapper-contact {
         width: 100%;
         background-color: black;
@@ -180,23 +258,23 @@
     .name-list {
         display: flex;
         color: white;
-        margin-top: 100px;
+
         position: relative;
         top: 25px;
     }
 
     .name-list li {
-        text-decoration: none;
-        cursor: pointer;
         color: white;
         position: relative;
-        top: 50px;
-        margin-left: 10px;
+        text-decoration: none;
+        cursor: pointer;
         font-size: .8em;
+        top: 35px;
+        margin-left: 10px;
     }
 
     .name-list .jaar {
-        top: -30px;
+        top: -35px;
     }
 
     .name-list li:hover {
@@ -243,6 +321,8 @@
         width: 15%;
         perspective: 1000px;
         margin-right: 5%;
+        margin-top: 100px;
+        margin-bottom: 50px;
         cursor: pointer;
     }
 
@@ -285,7 +365,7 @@
 
     .flip-card-back h2 {
         font-size: 15px;
-        color: yellow;
+
     }
 
     .flip-card img {
@@ -338,7 +418,6 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        /* align-items: center; */
         width: 100%;
         margin-bottom: -5%;
         font-family: futura-pt, sans-serif;
@@ -363,6 +442,13 @@
         margin-left: -20px;
     }
 
+    .artist-img5,
+    .artist-img6,
+
+    .artist-img8 {
+        margin-top: -10%;
+    }
+
     .artist-img2 {
         margin-left: 20px;
     }
@@ -371,6 +457,11 @@
         margin-left: -40px;
     }
 
+
+    .jaar2 {
+        position: relative;
+        top: 100px;
+    }
 
     /**************artists end********************/
 

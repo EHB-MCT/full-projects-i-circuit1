@@ -20,7 +20,7 @@
 .container {
     position: relative;
     background-color: inherit;
-    width: 50%;
+    width: 100%;
 }
 
 /* The circles on the timeline */
@@ -135,8 +135,85 @@
 
 
 @media(min-width:1024px) {
-    .line {
-        background-image: url(../images/noiselinks..svg);
-        background-repeat: no-repeat;
+    .noise {
+        position: absolute;
+        height: 100%;
+        top: 160px;
+        right: 0;
+        width: 360px;
+    }
+
+    .noise-links {
+        position: absolute;
+        height: 100%;
+        left: -40px;
+        top: 160px;
+        width: 360px;
+    }
+
+    .big-noise {
+        display: flex;
+        justify-content: space-between;
+        z-index: -1;
+    }
+
+    .noise,
+    .noise-links {
+        display: block;
+    }
+
+    .line::after {
+        content: '';
+        position: absolute;
+        width: 5px;
+        background-color: white;
+        top: 80px;
+        bottom: -100px;
+        left: 50%;
+        margin-left: -3px;
+    }
+
+
+    .container {
+        position: relative;
+        background-color: inherit;
+        width: 40%;
+    }
+
+
+    .container::after {
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background-color: white;
+        top: 100px;
+        border-radius: 50%;
+        z-index: 1;
+    }
+
+
+
+    .left {
+        left: 0px;
+    }
+
+
+    .right {
+        left: 50%;
+    }
+
+    h1 {
+        color: white;
+    }
+
+
+
+    .container.right::after {
+        left: -15px;
+    }
+
+    .container.left::after {
+        left: 122%;
     }
 }

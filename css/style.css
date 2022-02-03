@@ -13,13 +13,11 @@ html {
 
 
 
-.logo img {
-    width: 310px;
-}
-
-
 
 /* LOADING PAGE */
+/* 
+bron:https://smallenvelop.com/display-loading-icon-page-loads-completely/ */
+
 
 .no-js #loader {
     display: none;
@@ -45,9 +43,10 @@ html {
     background: url("../images/Logobegin.gif");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 30%;
+    background-size: 60%;
     background-color: black;
 }
+
 
 
 body {
@@ -264,504 +263,6 @@ header img {
 
 
 
-/* carousel */
-
-
-
-.slider {
-    display: grid;
-    place-items: center;
-    position: relative;
-    height: 250px;
-    width: 100%;
-    overflow: hidden;
-
-
-}
-
-.slide-track {
-    display: flex;
-    width: calc(250px*6);
-    animation: scroll 10s linear infinite;
-    animation-iteration-count: infinite;
-}
-
-.slide {
-    width: 250px;
-    display: flex;
-    align-items: center;
-}
-
-.slide img {
-    width: 100%;
-    height: auto;
-}
-
-@keyframes scroll {
-    0% {
-        transform: translateX(0px);
-    }
-
-    100% {
-        transform: translateX(-750px);
-    }
-
-}
-
-.sliderTwo {
-    display: grid;
-    place-items: center;
-    position: relative;
-    height: 250px;
-    width: 100%;
-    overflow: hidden;
-}
-
-.slide-trackTwo {
-    display: flex;
-    width: calc(250px*6);
-    animation: scrollTwo 10s linear infinite;
-    animation-iteration-count: infinite;
-}
-
-.slideTwo {
-    /*    width: 250px;
-    height: auto;
-    display: flex;
-    align-items: center; */
-
-    width: 250px;
-    display: flex;
-    align-items: center;
-
-
-}
-
-.slideTwo img {
-    width: 100%;
-    height: auto;
-}
-
-@keyframes scrollTwo {
-    0% {
-        transform: translateX(-750px);
-    }
-
-    100% {
-        transform: translateX(0px);
-    }
-
-}
-
-/* over ons */
-
-.over-ons {
-    padding-bottom: 100px;
-    padding-top: 100px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.over-ons-text {
-    width: 100%;
-}
-
-.over-ons a {
-    position: relative;
-    text-decoration: none;
-    color: white;
-    top: 50px;
-    padding: 15px;
-    font-weight: medium;
-    border: 2px solid white;
-}
-
-.over-ons a:hover {
-    border: 2px solid rgb(235, 0, 139);
-}
-
-section div.map {
-    width: 50%;
-    position: relative;
-    text-align: right;
-    display: none;
-}
-
-section.over-ons {
-    width: 100%;
-}
-
-/* traject */
-
-/* The actual timeline (the vertical ruler) */
-.line {
-    position: relative;
-    width: 100%;
-    right: 0px;
-}
-
-/* The actual timeline (the vertical ruler) */
-.line::after {
-    content: '';
-    position: absolute;
-    width: 5px;
-    background-color: white;
-    top: 50px;
-    left: 0px;
-    bottom: 0;
-}
-
-/* Container around content */
-.container {
-    position: relative;
-    background-color: inherit;
-    width: 50%;
-}
-
-/* The circles on the timeline */
-.container::after {
-    content: '';
-    position: absolute;
-    width: 15px;
-    height: 15px;
-    left: -7.5px;
-    margin-left: 4px;
-    background-color: white;
-    top: 50px;
-    border-radius: 50%;
-    z-index: 1;
-}
-
-/* Place the container to the left */
-.left {
-    left: 0;
-}
-
-/* the right box */
-
-
-.line {
-    color: white;
-    font-size: 48px;
-}
-
-.line p {
-
-    font-size: 16px;
-}
-
-.line h2 {
-
-    font-size: 32px;
-    text-shadow: 2px 1.5px white;
-}
-
-
-
-
-
-.right::after {
-    left: -7.5px;
-}
-
-
-.content {
-    padding: 20px 30px;
-    position: relative;
-    border-radius: 6px;
-
-}
-
-.container p {
-    color: white;
-}
-
-.start {
-    color: rgb(235, 0, 139);
-
-}
-
-.begeleiding {
-    color: rgb(0, 174, 239);
-
-}
-
-.proces {
-    color: yellow;
-
-}
-
-.resultaat {
-    color: rgb(235, 0, 139);
-
-}
-
-.noise {
-    display: none;
-}
-
-#contact-button {
-    position: relative;
-    text-decoration: none;
-    color: white;
-    top: 50px;
-    padding: 15px;
-    font-weight: medium;
-    border: 2px solid white;
-    text-align: center;
-}
-
-#contact-button:hover {
-    border: 2px solid rgb(235, 0, 139);
-}
-
-.line .left,
-.right {
-    margin-bottom: 70px;
-}
-
-
-.noise,
-.noise-links {
-    display: none;
-}
-
-/* artist */
-
-
-
-.wrapper-accordeon {
-    height: 100%;
-}
-
-
-/* Style the buttons that are used to open and close the accordion panel*/
-.accordion {
-    background-color: black;
-    color: white;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    text-align: left;
-    border: none;
-    outline: none;
-    transition: 0.4s;
-}
-
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover)*/
-.active,
-.accordion:hover {
-    background-color: black;
-}
-
-/* Style the accordion panel. Note: hidden by default*/
-.panel {
-    padding: 0 18px;
-    background-color: black;
-    display: none;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-}
-
-.accordion,
-.panel {
-    border-bottom: 2px solid white;
-}
-
-
-
-/* symbols naast accordeon */
-.accordion:after {
-    content: '';
-    /* Unicode character for "plus" sign (+) */
-    width: 10px;
-    height: 10px;
-    float: right;
-    margin-left: 5px;
-    border-left: 2px solid white;
-    border-bottom: 2px solid white;
-    transform: rotate(45deg);
-}
-
-.active.accordion:after {
-    content: '';
-    width: 10px;
-    height: 10px;
-    float: right;
-    transform: rotate(90deg);
-}
-
-/* Unicode character for "minus" sign (-) */
-
-
-.panel ul li {
-    padding-bottom: 20px;
-}
-
-.panel ul li {
-    cursor: pointer;
-
-}
-
-.panel :hover {
-    color: rgb(235, 0, 139);
-}
-
-
-
-
-
-/* contact */
-
-.container {
-    margin-top: 20px;
-    width: 100%;
-    background-color: black;
-}
-
-
-input[type=text] {
-
-    width: 90%;
-    padding: 15px;
-    margin: 5px 0 22px 0;
-    border: none;
-    background: white;
-    border: 3px solid transparent;
-}
-
-
-.container-contact button {
-    position: relative;
-    text-decoration: none;
-    color: white;
-    top: 20px;
-    padding: 15px;
-    font-weight: medium;
-    border: 2px solid white;
-    background-color: transparent;
-    font-family: futura-pt, sans-serif;
-}
-
-button:hover {
-    border: 2px solid rgb(235, 0, 139);
-}
-
-input:hover {
-    border: 3px solid rgb(235, 0, 139);
-}
-
-.contact {
-
-    padding: 16px 20px 16px 0px;
-    border: none;
-    width: 100%;
-}
-
-.container-contact {
-    margin-top: 20px;
-}
-
-
-.btn {
-    position: relative;
-    text-decoration: none;
-    color: white;
-    top: 20px;
-    padding: 15px;
-    font-weight: medium;
-    border: 2px solid white;
-}
-
-
-.container-contact a:hover {
-
-    border: 2px solid rgb(235, 0, 139);
-}
-
-.verantw a {
-    color: white;
-
-}
-
-
-
-.verantw {
-    margin-top: 100px;
-    margin-bottom: 100px;
-}
-
-.locatie {
-    position: relative;
-    margin-top: 50px;
-}
-
-.adress {
-    display: flex;
-    flex-direction: column;
-}
-
-
-.adress div {
-    margin-bottom: 50px;
-}
-
-
-#google-map-inner {
-    border-top: 8px double rgb(0, 174, 239);
-    border-bottom: 8px double rgb(235, 0, 139);
-    border-left: 8px double rgb(255, 242, 0);
-    border-right: 8px double rgb(255, 242, 0);
-    padding: 10px;
-}
-
-background-design .wrapper-drawing {
-    position: absolute;
-    bottom: 500px;
-    width: 250px;
-    height: 20%;
-    background-color: white;
-    right: 0;
-    bottom: 0px;
-
-}
-
-.line-drawing {
-    position: relative;
-
-}
-
-#line-one {
-    position: absolute;
-    width: 10%;
-    height: 100%;
-    left: 40%;
-    background: rgb(0, 174, 239);
-    transform: rotate(40deg);
-}
-
-#line-two {
-    position: absolute;
-    width: 10%;
-    height: 100%;
-    left: 3%;
-    top: 100px;
-    background: rgb(235, 0, 139);
-    transform: rotate(40deg);
-}
-
-#line-three {
-    position: absolute;
-    width: 10%;
-    height: 100%;
-    left: 20%;
-    top: 200px;
-    background: rgb(255, 242, 0);
-    transform: rotate(40deg);
-}
-
-
 /* footer */
 
 .logo-n22 img {
@@ -830,23 +331,10 @@ footer {
     color: white;
 }
 
-@media(max-width: 320px) {
-    header img {
-        max-width: 90%;
-        margin-top: 10px;
-    }
-
-    .artist .jaar {
-        position: relative;
-        margin-top: -0vh;
-
-    }
-}
-
 @media(min-width: 768px) {
 
 
-    /*    .outer-wrapper {
+    .outer-wrapper {
         background-color: transparent;
     }
 
@@ -855,7 +343,7 @@ footer {
         background-color: black;
         color: white;
         line-height: 1.5;
-    } */
+    }
 
     nav li {
         border: 2px solid transparent;
@@ -874,10 +362,11 @@ footer {
     .artist {
         margin-left: 5%;
         margin-top: 10vh;
+
+
+
     }
-
 }
-
 
 @media(min-width:1024px) {
 
@@ -898,12 +387,14 @@ footer {
     } */
 
     .nav {
+        position: relative;
         display: block;
-        right: 20%;
+        right: 35%;
     }
 
     .nav ul li {
         display: inline-block;
+
     }
 
     .outer-wrapper-home {
@@ -926,7 +417,6 @@ footer {
         display: none;
     }
 
-<<<<<<< HEAD
 
     #SLIDE_BG {
         position: absolute;
@@ -942,24 +432,6 @@ footer {
         z-index: -1;
         padding-top: 100px;
     }
-=======
-        .noise img {
-            position: absolute;
-            height: 100%;
-            top: 160px;
-            right: 0;
-            width: 360px;
-        }
-
-        .noise-links img {
-            position: absolute;
-            height: 100%;
-            /* bottom: 20px; */
-            left: -40px;
-            top: 160px;
-            width: 360px;
-        }
->>>>>>> 2dd1fa60bd740a99d20fdb39ff97ec8746ac6b51
 
 
     @keyframes slideBG {
@@ -969,32 +441,12 @@ footer {
 
         }
 
-<<<<<<< HEAD
         25% {
             background-image: url(../images/desk-begin-2.jpg);
         }
 
         50% {
             background-image: url(../images/desk-begin-3.jpg);
-=======
-
-        .container {
-            position: relative;
-            background-color: inherit;
-            width: 30%;
-        }
-
-
-        .container::after {
-            content: '';
-            position: absolute;
-            width: 20px;
-            height: 20px;
-            background-color: white;
-            top: 100px;
-            border-radius: 50%;
-            z-index: 1;
->>>>>>> 2dd1fa60bd740a99d20fdb39ff97ec8746ac6b51
         }
 
         75% {
@@ -1002,25 +454,11 @@ footer {
 
         }
 
-<<<<<<< HEAD
         100% {
             background-image: url(../images/desk-begin.jpg);
-=======
-
-
-        .left {
-            left: 0px;
->>>>>>> 2dd1fa60bd740a99d20fdb39ff97ec8746ac6b51
         }
     }
 
-<<<<<<< HEAD
-=======
-
-        .right {
-            left: 50%;
-        }
->>>>>>> 2dd1fa60bd740a99d20fdb39ff97ec8746ac6b51
 
     .over-ons {
         padding-top: 200px;
@@ -1033,23 +471,10 @@ footer {
 
 
 
-<<<<<<< HEAD
     .contact {
         width: 100%;
     }
 
-=======
-
-        .right::after {
-            left: -13px;
-        }
-
-
-        .content {
-            position: relative;
-            border-radius: 6px;
-        }
->>>>>>> 2dd1fa60bd740a99d20fdb39ff97ec8746ac6b51
 
     #eerste {
         display: flex;
@@ -1067,13 +492,7 @@ footer {
     }
 
 
-<<<<<<< HEAD
     /* contact */
-=======
-
-
-        /* artists */
->>>>>>> 2dd1fa60bd740a99d20fdb39ff97ec8746ac6b51
 
     .outer-wrapper-contact {
         background-color: black;
@@ -1103,143 +522,14 @@ footer {
         max-width: 90%;
     }
 
-    .content {
+    /* .content {
         left: 120px;
-    }
+    } */
 
     .google-map {
         width: 60%;
-    }
-
-
-
-    /* TRAJECT */
-
-    /* NOISE */
-
-    .noise img {
-        position: absolute;
-        /* height: 100%; */
-        top: 160px;
-        right: 0;
-        width: 360px;
-    }
-
-    .noise-links img {
-        position: absolute;
-        /* height: 100%; */
-        /* bottom: 20px; */
-        left: -40px;
-        top: 160px;
-        width: 360px;
-    }
-
-
-
-
-    .line::after {
-        content: '';
-        position: absolute;
-        width: 5px;
-        background-color: white;
-        top: 80px;
-        bottom: -100px;
-        left: 50%;
-        margin-left: -3px;
-    }
-
-    /* Container around content */
-    .container {
-        position: relative;
-        background-color: inherit;
-        width: 30%;
-    }
-
-    /* The circles on the timeline */
-    .container::after {
-        content: '';
-        position: absolute;
-        width: 20px;
-        height: 20px;
-        background-color: white;
-        top: 100px;
-        border-radius: 50%;
-        z-index: 1;
-    }
-
-
-    .container.left::after {
-        position: relative;
-        content: '';
-        position: absolute;
-        width: 20px;
-        height: 20px;
-        background-color: white;
-        top: 100px;
-        left: 385px;
-        border-radius: 50%;
-        z-index: 1;
-    }
-
-
-    /* Place the container to the left */
-    .left {
-        left: 0px;
-    }
-
-    /* the right box */
-    .right {
-        left: 50%;
-    }
-
-    h1 {
-        color: white;
-    }
-
-
-    .container.left::after {
-
-        position: relative;
-        content: '';
-        position: absolute;
-        width: 20px;
-        height: 20px;
-        background-color: white;
-        top: 100px;
-        left: 163.5%;
-        border-radius: 50%;
-        z-index: 1;
 
     }
-
-    /* Circle the right side */
-    .right::after {
-        left: -13px;
-    }
-
-    /* The actual content */
-    .content {
-        position: relative;
-        border-radius: 6px;
-    }
-
-    .container p {
-        color: white;
-    }
-
-    .content {
-        position: relative;
-        top: 50px;
-    }
-
-    .line {
-        margin-bottom: 100px;
-    }
-
-    #contact-button {
-        text-align: center;
-    }
-
 
     /* footer */
 
