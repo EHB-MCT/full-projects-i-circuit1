@@ -205,31 +205,6 @@ and when you move the mouse over it (hover) */
 
 @media(min-width: 768px) {
 
-
-    /*    .outer-wrapper {
-        background-color: transparent;
-    }
-    .outer-wrapper-contact {
-        width: 100%;
-        background-color: black;
-        color: white;
-        line-height: 1.5;
-    } */
-
-    nav li {
-        border: 2px solid transparent;
-    }
-
-    .locatie {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .map {
-        width: 60%;
-    }
-
     .artist {
         margin-left: 5%;
         margin-top: 10vh;
@@ -239,8 +214,6 @@ and when you move the mouse over it (hover) */
 @media(min-width:1024px) {
 
 
-
-    /**************artists********************/
 
     .wrapper-accordeon {
         display: none;
@@ -463,7 +436,7 @@ and when you move the mouse over it (hover) */
         top: 100px;
     }
 
-    /**************artists end********************/
+
 
 
 }

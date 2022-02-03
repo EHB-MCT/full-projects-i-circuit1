@@ -358,14 +358,6 @@ footer {
     .map {
         width: 60%;
     }
-
-    .artist {
-        margin-left: 5%;
-        margin-top: 10vh;
-
-
-
-    }
 }
 
 @media(min-width:1024px) {
