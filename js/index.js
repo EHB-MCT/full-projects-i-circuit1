@@ -1,12 +1,7 @@
 "use strict";
 
-import context from "../scripts/context.js";
-import * as Utils from "../scripts/utils.js";
 
-let width = context.canvas.width;
-let height = context.canvas.height;
-
-setup();
+/* setup();
 
 function setup() {
     context.fillStyle = "white";
@@ -16,7 +11,7 @@ function setup() {
 
 /* onClickMenu(); */
 
-function onClickMenu() {
+/* function onClickMenu() {
     document.getElementById("menu").classList.toggle("change");
     document.getElementById("nav").classList.toggle("change");
-}
+} */
