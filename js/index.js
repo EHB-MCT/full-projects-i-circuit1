@@ -1,21 +1,22 @@
-/*  "use strict";
+"use strict";
 
- /*import context from "../scripts/context.js";
- import * as Utils from "../scripts/utils.js";
+import context from "../scripts/context.js";
+import * as Utils from "../scripts/utils.js";
 
- let width = context.canvas.width;
- let height = context.canvas.height;
+let width = context.canvas.width;
+let height = context.canvas.height;
 
- setup();
+setup();
 
- function setup() {
-     context.fillStyle = "white";
-     context.fillRect(0, 0, width, height);
+function setup() {
+    context.fillStyle = "white";
+    context.fillRect(0, 0, width, height);
 
- } */
+}
 
-/*
- function onClickMenu() {
-     document.getElementById("menu").classList.toggle("change");
-     document.getElementById("nav").classList.toggle("change")
- } */
+/* onClickMenu(); */
+
+function onClickMenu() {
+    document.getElementById("menu").classList.toggle("change");
+    document.getElementById("nav").classList.toggle("change");
+}
