@@ -131,3 +131,12 @@
 .noise-links {
     display: none;
 }
+
+
+
+@media(min-width:1024px) {
+    .line {
+        background-image: url(../images/noiselinks..svg);
+        background-repeat: no-repeat;
+    }
+}
