@@ -5,6 +5,9 @@ html {
     scroll-behavior: smooth;
 }
 
+
+
+
 /* LOADING PAGE */
 
 .no-js #loader {
@@ -69,10 +72,10 @@ body {
     background-color: #000000;
     margin-left: 10%;
     margin-right: 10%;
-    font-family: futura-pt, sans-serif;
+    font-family: futura-pt, sans-serif !important;
     font-weight: 400;
     line-height: 1.5;
-    font-style: normal;
+    font-style: normal !important;
 }
 
 h1 {
@@ -166,6 +169,43 @@ nav ul li:last-child:hover {
     border-radius: 100%;
 }
 
+
+
+/* nav circle stay*/
+
+
+.disabled1 {
+    border: 2px solid rgb(235, 0, 139);
+    border-radius: 100%;
+    pointer-events: none;
+    cursor: not-allowed;
+}
+
+
+.disabled2 {
+    border: 2px solid rgb(0, 174, 239);
+    border-radius: 100%;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    pointer-events: none;
+    cursor: not-allowed;
+
+}
+
+
+.disabled3 {
+    border: 2px solid rgb(255, 242, 0);
+    border-radius: 100%;
+    pointer-events: none;
+    cursor: not-allowed;
+}
+
+.disabled4 {
+    border: 2px solid rgb(235, 0, 139);
+    border-radius: 100%;
+    pointer-events: none;
+    cursor: not-allowed;
+}
 
 
 .change #menu {
@@ -471,6 +511,12 @@ section.over-ons {
     margin-bottom: 70px;
 }
 
+
+.noise,
+.noise-links {
+    display: none;
+}
+
 /* artist */
 
 
@@ -552,16 +598,37 @@ section.over-ons {
     color: rgb(235, 0, 139);
 }
 
+
+
+.artist .jaar {
+    position: relative;
+
+}
+
 .artist-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
     width: 100%;
     font-family: futura-pt, sans-serif;
 }
 
 
+.artist-img1,
+.artist-img2,
+.artist-img3,
+.artist-img4,
+.artist-img5,
+.artist-img6,
+.artist-img7,
+.artist-img8 {
+    display: flex;
+}
+
+
+.artist-img2 {
+    margin-left: 20px;
+}
 
 .flip-card {
     width: 40%;
@@ -572,6 +639,8 @@ section.over-ons {
 .flip-card-front img {
     width: 100%;
 }
+
+
 
 .flip-card-back {
     display: none;
@@ -637,6 +706,21 @@ input[type=text] {
 }
 
 
+.container-contact button {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    top: 20px;
+    padding: 15px;
+    font-weight: medium;
+    border: 2px solid white;
+    background-color: transparent;
+    font-family: futura-pt, sans-serif;
+}
+
+button:hover {
+    border: 2px solid rgb(235, 0, 139);
+}
 
 input:hover {
     border: 3px solid rgb(235, 0, 139);
@@ -646,7 +730,6 @@ input:hover {
 
     padding: 16px 20px 16px 0px;
     border: none;
-    cursor: pointer;
     width: 100%;
 }
 
@@ -680,6 +763,7 @@ input:hover {
 
 .verantw {
     margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .locatie {
@@ -709,10 +793,12 @@ input:hover {
 /* background-design */
 .wrapper-drawing {
     position: absolute;
+    bottom: 500px;
     width: 250px;
-    height: 250px;
-    background-color: white;
+    height: 20%;
+    /* background-color: white; */
     right: 0;
+    bottom: 0px;
 
 }
 
@@ -722,17 +808,50 @@ input:hover {
 }
 
 #line-one {
-    position: relative;
+    position: absolute;
     width: 10%;
-    left: 20px;
     height: 100%;
+    left: 40%;
     background: rgb(0, 174, 239);
+    transform: rotate(40deg);
 }
 
+#line-two {
+    position: absolute;
+    width: 10%;
+    height: 100%;
+    left: 3%;
+    top: 100px;
+    background: rgb(235, 0, 139);
+    transform: rotate(40deg);
+}
 
+#line-three {
+    position: absolute;
+    width: 10%;
+    height: 100%;
+    left: 20%;
+    top: 200px;
+    background: rgb(255, 242, 0);
+    transform: rotate(40deg);
+}
+
+/* 
+#canvas {
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    height: 50%;
+    position: absolute;
+} */
 
 
 /* footer */
+
+.logo-n22 img {
+    width: 50%;
+    text-align: center;
+}
 
 footer {
     width: 100%;
@@ -799,6 +918,11 @@ footer {
         max-width: 90%;
         margin-top: 10px;
     }
+
+    .artist .jaar {
+        position: relative;
+        margin-top: -60vh;
+    }
 }
 
 @media(min-width: 768px) {
@@ -829,512 +953,564 @@ footer {
         width: 60%;
     }
 
-}
-
-
-@media(min-width:1024px) {
-
-    #menu-bar {
-        display: none;
+    .artist {
+        margin-left: 5%;
+        margin-top: 10vh;
     }
 
-    /* .bignav {
+
+
+
+
+    @media(min-width:1024px) {
+
+        /* loading page */
+        .se-pre-con {
+            background-size: 30%;
+
+        }
+
+        #menu-bar {
+            display: none;
+        }
+
+        /* .bignav {
         position: relative;
         bottom: 60px;
         left: 10%;
     } */
 
-    .nav {
-        position: relative;
-        display: block;
-        right: 35%;
-    }
+        .nav {
+            position: relative;
+            display: block;
+            right: 35%;
+        }
 
-    .nav ul li {
-        display: inline-block;
+        .nav ul li {
+            display: inline-block;
 
-    }
+        }
 
-    .outer-wrapper-home {
-        background-color: transparent;
-    }
+        .outer-wrapper-home {
+            background-color: transparent;
+        }
 
-    .wrapper-home {
-        background-color: transparent;
-    }
+        .wrapper-home {
+            background-color: transparent;
+        }
 
-    nav li {
-        border: 2px solid transparent;
-    }
+        nav li {
+            border: 2px solid transparent;
+        }
 
-    .slider {
-        display: none;
-    }
+        .slider {
+            display: none;
+        }
 
-    .sliderTwo {
-        display: none;
-    }
-
-
-    #SLIDE_BG {
-        position: absolute;
-        width: 100%;
-        height: 100vh;
-        background-position: center center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        backface-visibility: hidden;
-        animation: slideBG 30s linear infinite 0s;
-        animation-timing-function: ease-in-out;
-        background-image: url(../images/desk-begin.jpg);
-        z-index: -1;
-        padding-top: 100px;
-    }
+        .sliderTwo {
+            display: none;
+        }
 
 
-    @keyframes slideBG {
-        0% {
+        #SLIDE_BG {
+            position: absolute;
+            width: 100%;
+            height: 100vh;
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            backface-visibility: hidden;
+            animation: slideBG 30s linear infinite 0s;
+            animation-timing-function: ease-in-out;
             background-image: url(../images/desk-begin.jpg);
+            z-index: -1;
+            padding-top: 100px;
+        }
 
+
+        @keyframes slideBG {
+            0% {
+                background-image: url(../images/desk-begin.jpg);
+
+
+            }
+
+            25% {
+                background-image: url(../images/desk-begin-2.jpg);
+            }
+
+            50% {
+                background-image: url(../images/desk-begin-3.jpg);
+            }
+
+            75% {
+                background-image: url(../images/desk-begin-4.jpg);
+
+            }
+
+            100% {
+                background-image: url(../images/desk-begin.jpg);
+            }
+        }
+
+
+        .over-ons {
+            padding-top: 200px;
+            margin-top: 62%;
+            width: 50%;
+        }
+
+        /* contact */
+
+
+
+
+        .contact {
+            width: 100%;
+        }
+
+
+        #eerste {
+            display: flex;
+        }
+
+        #eerste div {
+            width: 30%;
+            margin-right: 10%;
+        }
+
+        #tweede {
+            display: flex;
+            flex-direction: column;
+            width: 97.5%;
+        }
+
+
+        /* contact */
+
+        .outer-wrapper-contact {
+            background-color: black;
+            width: 100%;
+        }
+
+        .wrapper-contact {
+            background-color: #000000;
+            margin-left: 10%;
+            margin-right: 10%;
+            font-family: futura-pt, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+
+        #eerste {
+            display: flex;
 
         }
 
-        25% {
-            background-image: url(../images/desk-begin-2.jpg);
+        .contact {
+            position: relative;
         }
 
-        50% {
-            background-image: url(../images/desk-begin-3.jpg);
+        .container {
+            max-width: 90%;
         }
 
-        75% {
-            background-image: url(../images/desk-begin-4.jpg);
+        .content {
+            left: 120px;
+        }
+
+        .google-map {
+            width: 60%;
+        }
+
+
+
+        /* TRAJECT */
+
+        /* NOISE */
+
+        .noise img {
+            position: absolute;
+            /* height: 100%; */
+            top: 160px;
+            right: 0;
+            width: 360px;
+        }
+
+        .noise-links img {
+            position: absolute;
+            /* height: 100%; */
+            /* bottom: 20px; */
+            left: -40px;
+            top: 160px;
+            width: 360px;
+        }
+
+
+
+
+        .line::after {
+            content: '';
+            position: absolute;
+            width: 5px;
+            background-color: white;
+            top: 80px;
+            bottom: -100px;
+            left: 50%;
+            margin-left: -3px;
+        }
+
+        /* Container around content */
+        .container {
+            position: relative;
+            background-color: inherit;
+            width: 30%;
+        }
+
+        /* The circles on the timeline */
+        .container::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: white;
+            top: 100px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+
+        .container.left::after {
+            position: relative;
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: white;
+            top: 100px;
+            left: 385px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+
+        /* Place the container to the left */
+        .left {
+            left: 0px;
+        }
+
+        /* the right box */
+        .right {
+            left: 50%;
+        }
+
+        h1 {
+            color: white;
+        }
+
+
+        .container.left::after {
+
+            position: relative;
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: white;
+            top: 100px;
+            left: 163.5%;
+            border-radius: 50%;
+            z-index: 1;
 
         }
 
-        100% {
-            background-image: url(../images/desk-begin.jpg);
+        /* Circle the right side */
+        .right::after {
+            left: -13px;
         }
-    }
 
-
-    .over-ons {
-        padding-top: 200px;
-        margin-top: 62%;
-        width: 50%;
-    }
-
-    /* contact */
-
-
-
-
-    .contact {
-        width: 100%;
-    }
-
-
-    #eerste {
-        display: flex;
-    }
-
-    #eerste div {
-        width: 30%;
-        margin-right: 10%;
-    }
-
-    #tweede {
-        display: flex;
-        flex-direction: column;
-        width: 97.5%;
-    }
-
-
-    /* contact */
-
-    .outer-wrapper-contact {
-        background-color: black;
-        width: 100%;
-    }
-
-    .wrapper-contact {
-        background-color: #000000;
-        margin-left: 10%;
-        margin-right: 10%;
-        font-family: futura-pt, sans-serif;
-        font-weight: 400;
-        font-style: normal;
-    }
-
-
-    #eerste {
-        display: flex;
-
-    }
-
-    .contact {
-        position: relative;
-    }
-
-    .container {
-        max-width: 90%;
-    }
-
-    .content {
-        left: 120px;
-    }
-
-    .google-map {
-        width: 60%;
-    }
-
-
-
-    /* TRAJECT */
-
-    /* NOISE */
-
-    .noise {
-        width: 100%;
-        position: absolute;
-        display: flex;
-        justify-content: space-between;
-        height: 70%;
-        top: 50%;
-
-    }
-
-    #noise-1 {
-        transform: rotateY(180deg);
-        height: 1500px;
-        margin-left: -30%;
-    }
-
-    #noise-2 {
-
-        height: 1500px;
-        margin-right: -30%;
-        overflow-x: hidden;
-
-    }
-
-
-
-
-    .line::after {
-        content: '';
-        position: absolute;
-        width: 5px;
-        background-color: white;
-        top: 80px;
-        bottom: -100px;
-        left: 50%;
-        margin-left: -3px;
-    }
-
-    /* Container around content */
-    .container {
-        position: relative;
-        background-color: inherit;
-        width: 30%;
-    }
-
-    /* The circles on the timeline */
-    .container::after {
-        content: '';
-        position: absolute;
-        width: 20px;
-        height: 20px;
-        background-color: white;
-        top: 100px;
-        border-radius: 50%;
-        z-index: 1;
-    }
-
-
-    .container.left::after {
-        position: relative;
-        content: '';
-        position: absolute;
-        width: 20px;
-        height: 20px;
-        background-color: white;
-        top: 100px;
-        left: 385px;
-        border-radius: 50%;
-        z-index: 1;
-    }
-
-
-    /* Place the container to the left */
-    .left {
-        left: 0px;
-    }
-
-    /* the right box */
-    .right {
-        left: 50%;
-    }
-
-    h1 {
-        color: white;
-    }
-
-
-    .container.left::after {
-
-        position: relative;
-        content: '';
-        position: absolute;
-        width: 20px;
-        height: 20px;
-        background-color: white;
-        top: 100px;
-        left: 163.5%;
-        border-radius: 50%;
-        z-index: 1;
-
-    }
-
-    /* Circle the right side */
-    .right::after {
-        left: -13px;
-    }
-
-    /* The actual content */
-    .content {
-        position: relative;
-        border-radius: 6px;
-    }
-
-    .container p {
-        color: white;
-    }
-
-    .content {
-        position: relative;
-        top: 50px;
-    }
-
-    .line {
-        margin-bottom: 100px;
-    }
-
-    #contact-button {
-        text-align: center;
-    }
-
-    /* artists */
-
-    .wrapper-accordeon {
-        display: none;
-    }
-
-    .tijdlijn {
-        position: fixed;
-        width: 5px;
-        height: 60%;
-        left: 5%;
-        top: 200px;
-        background-color: white;
-    }
-
-    .name-list {
-        display: flex;
-        color: white;
-    }
-
-    .name-list {
-        margin-top: 100px;
-        position: relative;
-        top: 80px;
-    }
-
-    .name-list a {
-        color: white;
-        position: relative;
-        top: 35px;
-        margin-left: 10px;
-    }
-
-    .dates {
-        display: block;
-    }
-
-    .dates a {
-        position: relative;
-        text-decoration: none;
-        color: white;
-        display: flex;
-        justify-content: space-around;
-        top: 100px;
-        left: 50px;
-        margin-bottom: 50px;
-    }
-
-    .date::before {
-        content: '';
-        position: absolute;
-        right: 45px;
-        width: 15px;
-        height: 15px;
-        border-radius: 50%;
-        background: white;
-    }
-
-    .w3-display-topright {
-        background: white;
-    }
-
-    .artist {
-        margin-left: 5%;
-        margin-top: 30px;
-    }
-
-
-
-    .artist .jaar {
-        position: relative;
-
-    }
-
-
-    .artist img {
-        width: 300px;
-        padding: 0px;
-    }
-
-    .W3-modal-conent-inner :first-child {
-        position: relative;
-        width: 50%;
-    }
-
-    .flip-card {
-        background-color: transparent;
-        width: 15%;
-        /* height: 300px; */
-        perspective: 1000px;
-        margin-right: 5%;
-        margin-top: 100px;
-        margin-bottom: 50px;
-        cursor: pointer;
-    }
-
-    .flip-card-inner {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        text-align: center;
-        transition: transform 0.6s;
-        transform-style: preserve-3d;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    }
-
-    .flip-card:hover .flip-card-inner {
-        transform: rotateY(180deg);
-    }
-
-    .flip-card-front,
-    .flip-card-back {
-        position: absolute;
-        width: 100%;
-
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
-    }
-
-    .flip-card-back {
-        width: 100%;
-        position: relative;
-        display: block;
-        border: 10px double rgb(235, 0, 139);
-        top: 20%;
-        padding-bottom: 10px;
-        border-radius: 100%;
-        background-color: black;
-        color: white;
-        transform: rotateY(180deg);
-    }
-
-
-    .flip-card img {
-        width: 100%;
-    }
-
-    .artist-container {
-        justify-content: center;
-    }
-
-    .w3-container {
-        text-align: left;
-        margin-top: 20%;
-    }
-
-    .W3-modal-conent-inner :first-child {
-        position: relative;
-        align-self: center;
-        width: 70%;
+        /* The actual content */
+        .content {
+            position: relative;
+            border-radius: 6px;
+        }
+
+        .container p {
+            color: white;
+        }
+
+        .content {
+            position: relative;
+            top: 50px;
+        }
+
+        .line {
+            margin-bottom: 100px;
+        }
+
+        #contact-button {
+            text-align: center;
+        }
+
+        /* artists */
+
+        .wrapper-accordeon {
+            display: none;
+        }
+
+        .tijdlijn {
+            position: fixed;
+            width: 5px;
+            height: 60%;
+            left: 5%;
+            top: 200px;
+            background-color: white;
+        }
+
+        .name-list {
+            display: flex;
+            color: white;
+            margin-top: 100px;
+            position: relative;
+            top: 100px;
+        }
+
+        .name-list li {
+            color: white;
+            position: relative;
+            text-decoration: none;
+            cursor: pointer;
+            font-size: .8em;
+            top: 35px;
+            margin-left: 10px;
+        }
+
+        .name-list .jaar {
+            top: -35px;
+        }
+
+        .dates {
+            display: block;
+        }
+
+        .dates a {
+            position: relative;
+            text-decoration: none;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            top: 100px;
+            left: 50px;
+            margin-bottom: 50px;
+        }
+
+        .date::before {
+            content: '';
+            position: absolute;
+            right: 45px;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background: white;
+        }
+
+        .w3-display-topright {
+            background: white;
+        }
+
+        .artist {
+            margin-left: 10%;
+            margin-top: 0vh;
+        }
+
+        .artist .jaar {
+            position: relative;
+
+        }
+
+
+        .artist img {
+            width: 300px;
+            padding: 0px;
+        }
+
+        .W3-modal-conent-inner :first-child {
+            position: relative;
+            width: 50%;
+        }
+
+        .flip-card {
+            background-color: transparent;
+            width: 15%;
+            /* height: 300px; */
+            perspective: 1000px;
+            margin-right: 5%;
+            margin-top: 100px;
+            margin-bottom: 50px;
+            cursor: pointer;
+        }
+
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flip-card-front,
+        .flip-card-back {
+            position: absolute;
+            width: 100%;
+
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+
+        .flip-card-back {
+            width: 100%;
+            position: relative;
+            display: block;
+            border: 10px double rgb(235, 0, 139);
+            top: -5%;
+            background-color: black;
+            margin-left: 10%;
+            color: white;
+            transform: rotateY(180deg);
+        }
+
+        .flip-card-back h2 {
+            font-size: 18px;
+        }
+
+        .flip-card img {
+            width: 100%;
+        }
+
+        /* .flip-card h2 {
+        font-size: 15px;
+        color: yellow;
+    } */
+
+        .artist-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 100%;
+            margin-bottom: -5%;
+        }
+
+
+        .artist-img1,
+        .artist-img2,
+        .artist-img3,
+        .artist-img4,
+        .artist-img5,
+        .artist-img6,
+        .artist-img8 {
+            margin-left: -20px;
+        }
+
+        .artist-img5,
+        .artist-img6,
+        .artist-img7,
+        .artist-img8 {
+            margin-top: -10%;
+        }
+
+        .artist-img2 {
+            margin-left: 20px;
+        }
+
+        .artist-img7 {
+            margin-left: -40px;
+        }
+
+
+        .w3-container {
+            text-align: left;
+            margin-top: 10%;
+        }
+
+        .W3-modal-conent-inner :first-child {
+            position: relative;
+            align-self: center;
+            width: 70%;
+
+        }
+
+        .W3-modal-conent-inner :last-child {
+            flex: 1;
+        }
+
+        .W3-modal-conent-inner {
+            display: flex;
+            justify-content: space-around;
+        }
+
+
+        /* footer */
+
+        .fa {
+            width: 150px;
+        }
+
+
+        /* over ons */
+
+        .over-ons {
+            padding-bottom: 100px;
+            padding-top: 100px;
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .over-ons-text {
+            width: 50%;
+            padding-right: 30px;
+        }
+
+        .over-ons-text p {
+            font-size: larger;
+        }
+
+        .over-ons a {
+            position: relative;
+            text-decoration: none;
+            color: white;
+            top: 50px;
+            padding: 15px;
+            font-weight: medium;
+            border: 2px solid white;
+        }
+
+        .over-ons a:hover {
+            border: 2px solid rgb(235, 0, 139);
+        }
+
+        section div.map {
+            margin-top: 2%;
+            width: 70%;
+            position: relative;
+            text-align: right;
+            display: block;
+        }
+
+        section.over-ons {
+            width: 100%;
+        }
+
+        .map img {
+            width: 70%;
+        }
 
     }
-
-    .W3-modal-conent-inner :last-child {
-        flex: 1;
-    }
-
-    .W3-modal-conent-inner {
-        display: flex;
-        justify-content: space-around;
-    }
-
-
-    /* footer */
-
-    .fa {
-        width: 150px;
-    }
-
-
-    /* over ons */
-
-    .over-ons {
-        padding-bottom: 100px;
-        padding-top: 100px;
-        display: flex;
-        justify-content: space-between;
-
-    }
-
-    .over-ons-text {
-        width: 50%;
-        padding-right: 30px;
-    }
-
-    .over-ons a {
-        position: relative;
-        text-decoration: none;
-        color: white;
-        top: 50px;
-        padding: 15px;
-        font-weight: medium;
-        border: 2px solid white;
-    }
-
-    .over-ons a:hover {
-        border: 2px solid rgb(235, 0, 139);
-    }
-
-    section div.map {
-        width: 50%;
-        position: relative;
-        text-align: right;
-        display: block;
-    }
-
-    section.over-ons {
-        width: 100%;
-    }
-
-
-
-
 }

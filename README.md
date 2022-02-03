@@ -2,3 +2,6 @@
 # full-projects-starter
 
 hmtl--> index.html foto's
+
+
+3de schil 
